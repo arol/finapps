@@ -14,5 +14,7 @@
     #define MR_SHORTHAND
     #import "CoreData+MagicalRecord.h"
 
+    #import "Constants.h"
+
     #define SharedAppDelegate ((LFAppDelegate *)[[UIApplication sharedApplication] delegate])
 #endif

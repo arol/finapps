@@ -214,6 +214,7 @@
 		A08367CB163B1E2000E78308 /* Usuari.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Usuari.m; sourceTree = "<group>"; };
 		A08367CD163B1E6700E78308 /* CompteCorrent+Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CompteCorrent+Functions.h"; sourceTree = "<group>"; };
 		A08367CE163B1E6700E78308 /* CompteCorrent+Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CompteCorrent+Functions.m"; sourceTree = "<group>"; };
+		9F671FE6163B1AEE00374E48 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
