@@ -29,6 +29,7 @@
 		9F671FE1163B0EF000374E48 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F671FE0163B0EF000374E48 /* CoreData.framework */; };
 		9F671FF2163B359800374E48 /* LFParseConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FF1163B359800374E48 /* LFParseConnector.m */; };
 		9F671FF6163B4AD400374E48 /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FF5163B4AD400374E48 /* Categoria.m */; };
+		A058FDAD163B35D900037FCC /* Operacio+Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = A058FDAC163B35D900037FCC /* Operacio+Functions.m */; };
 		A0836565163B16BF00E78308 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A083654F163B16BF00E78308 /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A0836566163B16BF00E78308 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A0836551163B16BF00E78308 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A0836567163B16BF00E78308 /* AFImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A0836553163B16BF00E78308 /* AFImageCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -118,6 +119,8 @@
 		9F671FF1163B359800374E48 /* LFParseConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFParseConnector.m; sourceTree = "<group>"; };
 		9F671FF4163B4AD400374E48 /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categoria.h; sourceTree = "<group>"; };
 		9F671FF5163B4AD400374E48 /* Categoria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categoria.m; sourceTree = "<group>"; };
+		A058FDAB163B35D900037FCC /* Operacio+Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Operacio+Functions.h"; sourceTree = "<group>"; };
+		A058FDAC163B35D900037FCC /* Operacio+Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Operacio+Functions.m"; sourceTree = "<group>"; };
 		A083654E163B16BF00E78308 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		A083654F163B16BF00E78308 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		A0836550163B16BF00E78308 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -655,6 +658,7 @@
 				A08367CF163B1E6700E78308 /* CompteCorrent+Functions.m in Sources */,
 				9F671FF2163B359800374E48 /* LFParseConnector.m in Sources */,
 				9F671FF6163B4AD400374E48 /* Categoria.m in Sources */,
+				A058FDAD163B35D900037FCC /* Operacio+Functions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -76,7 +76,6 @@
     cc.ident = [JSON valueForKeyPath:@"data.id"];
     cc.office = [JSON valueForKeyPath:@"data.office"];
     cc.retainedBalance = [JSON valueForKeyPath:@"data.retainedBalance"];
-#warning isEstalvi al parse
     cc.isEstalvi = NO;
 #warning S'han de fer relacions, aqui o mes tard?
     cc.operacions = nil;
