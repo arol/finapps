@@ -8,8 +8,10 @@
 
 #define TESTING 1
 
+#define kUserToken @"49e-a84e-94dbd5554aa2"
+
 #if TESTING
     
 #else
-    
+
 #endif

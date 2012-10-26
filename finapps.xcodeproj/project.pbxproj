@@ -30,6 +30,7 @@
 		9F671FB6163AF7E800374E48 /* finappsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FB5163AF7E800374E48 /* finappsTests.m */; };
 		9F671FC5163AF81E00374E48 /* finapps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FC3163AF81E00374E48 /* finapps.xcdatamodeld */; };
 		9F671FE1163B0EF000374E48 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F671FE0163B0EF000374E48 /* CoreData.framework */; };
+		9F671FF2163B359800374E48 /* LFParseConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FF1163B359800374E48 /* LFParseConnector.m */; };
 		A0836565163B16BF00E78308 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A083654F163B16BF00E78308 /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A0836566163B16BF00E78308 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A0836551163B16BF00E78308 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A0836567163B16BF00E78308 /* AFImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A0836553163B16BF00E78308 /* AFImageCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -119,6 +120,9 @@
 		9F671FB5163AF7E800374E48 /* finappsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = finappsTests.m; sourceTree = "<group>"; };
 		9F671FC4163AF81E00374E48 /* finapps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = finapps.xcdatamodel; sourceTree = "<group>"; };
 		9F671FE0163B0EF000374E48 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9F671FE6163B1AEE00374E48 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		9F671FF0163B359800374E48 /* LFParseConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFParseConnector.h; sourceTree = "<group>"; };
+		9F671FF1163B359800374E48 /* LFParseConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFParseConnector.m; sourceTree = "<group>"; };
 		A083654E163B16BF00E78308 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		A083654F163B16BF00E78308 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		A0836550163B16BF00E78308 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -214,7 +218,6 @@
 		A08367CB163B1E2000E78308 /* Usuari.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Usuari.m; sourceTree = "<group>"; };
 		A08367CD163B1E6700E78308 /* CompteCorrent+Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CompteCorrent+Functions.h"; sourceTree = "<group>"; };
 		A08367CE163B1E6700E78308 /* CompteCorrent+Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CompteCorrent+Functions.m"; sourceTree = "<group>"; };
-		9F671FE6163B1AEE00374E48 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -359,6 +362,8 @@
 			children = (
 				A0836570163B172800E78308 /* LFApiFinappsConnector.h */,
 				A0836571163B172800E78308 /* LFApiFinappsConnector.m */,
+				9F671FF0163B359800374E48 /* LFParseConnector.h */,
+				9F671FF1163B359800374E48 /* LFParseConnector.m */,
 			);
 			name = "API connector";
 			sourceTree = "<group>";
@@ -661,6 +666,7 @@
 				A08367C9163B1E1F00E78308 /* Targeta.m in Sources */,
 				A08367CC163B1E2000E78308 /* Usuari.m in Sources */,
 				A08367CF163B1E6700E78308 /* CompteCorrent+Functions.m in Sources */,
+				9F671FF2163B359800374E48 /* LFParseConnector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

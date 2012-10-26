@@ -9,8 +9,7 @@
 #import "LFApiFinappsConnector.h"
 #import "AFJSONRequestOperation.h"
 
-static NSString * const kGetGetOneApiUrlString = @"http://finappsapi.bdigital.org/api/2012/d496e7aaa1/";
-//static NSString * const kGetGetOneApiUrlString = @"http://hollow-mountain-4715.herokuapp.com/";
+static NSString * const kAPIFinAppsConnector = @"http://finappsapi.bdigital.org/api/2012/d496e7aaa1/";
 
 @implementation LFApiFinappsConnector
 
@@ -19,7 +18,7 @@ static NSString * const kGetGetOneApiUrlString = @"http://finappsapi.bdigital.or
     static dispatch_once_t onceToken;
     
     dispatch_once(&onceToken, ^{
-        _sharedClient = [[LFApiFinappsConnector alloc] initWithBaseURL:[NSURL URLWithString:kGetGetOneApiUrlString]];
+        _sharedClient = [[LFApiFinappsConnector alloc] initWithBaseURL:[NSURL URLWithString:kAPIFinAppsConnector]];
     });
     
     return _sharedClient;
