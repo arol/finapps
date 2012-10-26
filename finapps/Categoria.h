@@ -2,7 +2,7 @@
 //  Categoria.h
 //  finapps
 //
-//  Created by David Cortés Fulla on 26/10/12.
+//  Created by Arol Viñolas on 27/10/12.
 //  Copyright (c) 2012 Lafosca. All rights reserved.
 //
 
@@ -15,6 +15,7 @@
 
 @property (nonatomic, retain) NSString * ident;
 @property (nonatomic, retain) NSString * nom;
+@property (nonatomic, retain) NSNumber * isRecursive;
 @property (nonatomic, retain) NSSet *productes;
 @property (nonatomic, retain) Repte *repte;
 @end

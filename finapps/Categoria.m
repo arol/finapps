@@ -2,7 +2,7 @@
 //  Categoria.m
 //  finapps
 //
-//  Created by David Cortés Fulla on 26/10/12.
+//  Created by Arol Viñolas on 27/10/12.
 //  Copyright (c) 2012 Lafosca. All rights reserved.
 //
 
@@ -15,6 +15,7 @@
 
 @dynamic ident;
 @dynamic nom;
+@dynamic isRecursive;
 @dynamic productes;
 @dynamic repte;
 

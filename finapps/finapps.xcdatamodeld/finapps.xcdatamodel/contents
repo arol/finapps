@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C54" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Categoria" representedClassName="Categoria" syncable="YES">
         <attribute name="ident" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isRecursive" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="nom" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="productes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Operacio" inverseName="categoria" inverseEntity="Operacio" syncable="YES"/>
         <relationship name="repte" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Repte" inverseName="categoria" inverseEntity="Repte" syncable="YES"/>
@@ -73,7 +74,7 @@
         <relationship name="reptes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repte" inverseName="usuari" inverseEntity="Repte" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Categoria" positionX="-7677" positionY="-19953" width="128" height="103"/>
+        <element name="Categoria" positionX="-7677" positionY="-19953" width="128" height="118"/>
         <element name="CompteCorrent" positionX="-7668" positionY="-19521" width="128" height="238"/>
         <element name="Objectiu" positionX="-7668" positionY="-19206" width="117" height="88"/>
         <element name="Operacio" positionX="-7677" positionY="-19800" width="128" height="193"/>
