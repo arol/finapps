@@ -28,6 +28,15 @@
 		9F671FAB163AF7E800374E48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F671F7B163AF7E700374E48 /* Foundation.framework */; };
 		9F671FB3163AF7E800374E48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F671FB1163AF7E800374E48 /* InfoPlist.strings */; };
 		9F671FB6163AF7E800374E48 /* finappsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FB5163AF7E800374E48 /* finappsTests.m */; };
+		9F671FC5163AF81E00374E48 /* finapps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FC3163AF81E00374E48 /* finapps.xcdatamodeld */; };
+		9F671FCA163B0DC100374E48 /* Targeta.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FC9163B0DC100374E48 /* Targeta.m */; };
+		9F671FCD163B0DC100374E48 /* Repte.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FCC163B0DC100374E48 /* Repte.m */; };
+		9F671FD0163B0DC100374E48 /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FCF163B0DC100374E48 /* Categoria.m */; };
+		9F671FD3163B0DC100374E48 /* Operacio.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FD2163B0DC100374E48 /* Operacio.m */; };
+		9F671FD6163B0DC100374E48 /* Objectiu.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FD5163B0DC100374E48 /* Objectiu.m */; };
+		9F671FD9163B0DC100374E48 /* CompteEstalvi.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FD8163B0DC100374E48 /* CompteEstalvi.m */; };
+		9F671FDC163B0DC100374E48 /* Usuari.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FDB163B0DC100374E48 /* Usuari.m */; };
+		9F671FDF163B0DC100374E48 /* CompteCorrent.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FDE163B0DC100374E48 /* CompteCorrent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +78,23 @@
 		9F671FB2163AF7E800374E48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9F671FB4163AF7E800374E48 /* finappsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = finappsTests.h; sourceTree = "<group>"; };
 		9F671FB5163AF7E800374E48 /* finappsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = finappsTests.m; sourceTree = "<group>"; };
+		9F671FC4163AF81E00374E48 /* finapps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = finapps.xcdatamodel; sourceTree = "<group>"; };
+		9F671FC8163B0DC100374E48 /* Targeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Targeta.h; sourceTree = "<group>"; };
+		9F671FC9163B0DC100374E48 /* Targeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Targeta.m; sourceTree = "<group>"; };
+		9F671FCB163B0DC100374E48 /* Repte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repte.h; sourceTree = "<group>"; };
+		9F671FCC163B0DC100374E48 /* Repte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Repte.m; sourceTree = "<group>"; };
+		9F671FCE163B0DC100374E48 /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categoria.h; sourceTree = "<group>"; };
+		9F671FCF163B0DC100374E48 /* Categoria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categoria.m; sourceTree = "<group>"; };
+		9F671FD1163B0DC100374E48 /* Operacio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operacio.h; sourceTree = "<group>"; };
+		9F671FD2163B0DC100374E48 /* Operacio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Operacio.m; sourceTree = "<group>"; };
+		9F671FD4163B0DC100374E48 /* Objectiu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Objectiu.h; sourceTree = "<group>"; };
+		9F671FD5163B0DC100374E48 /* Objectiu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Objectiu.m; sourceTree = "<group>"; };
+		9F671FD7163B0DC100374E48 /* CompteEstalvi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompteEstalvi.h; sourceTree = "<group>"; };
+		9F671FD8163B0DC100374E48 /* CompteEstalvi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompteEstalvi.m; sourceTree = "<group>"; };
+		9F671FDA163B0DC100374E48 /* Usuari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Usuari.h; sourceTree = "<group>"; };
+		9F671FDB163B0DC100374E48 /* Usuari.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Usuari.m; sourceTree = "<group>"; };
+		9F671FDD163B0DC100374E48 /* CompteCorrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompteCorrent.h; sourceTree = "<group>"; };
+		9F671FDE163B0DC100374E48 /* CompteCorrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompteCorrent.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +154,7 @@
 		9F671F7F163AF7E700374E48 /* finapps */ = {
 			isa = PBXGroup;
 			children = (
+				9F671FC7163AF82A00374E48 /* models */,
 				9F671F88163AF7E800374E48 /* LFAppDelegate.h */,
 				9F671F89163AF7E800374E48 /* LFAppDelegate.m */,
 				9F671F91163AF7E800374E48 /* MainStoryboard.storyboard */,
@@ -175,6 +202,30 @@
 				9F671FB1163AF7E800374E48 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F671FC7163AF82A00374E48 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				9F671FDD163B0DC100374E48 /* CompteCorrent.h */,
+				9F671FDE163B0DC100374E48 /* CompteCorrent.m */,
+				9F671FDA163B0DC100374E48 /* Usuari.h */,
+				9F671FDB163B0DC100374E48 /* Usuari.m */,
+				9F671FD7163B0DC100374E48 /* CompteEstalvi.h */,
+				9F671FD8163B0DC100374E48 /* CompteEstalvi.m */,
+				9F671FD4163B0DC100374E48 /* Objectiu.h */,
+				9F671FD5163B0DC100374E48 /* Objectiu.m */,
+				9F671FD1163B0DC100374E48 /* Operacio.h */,
+				9F671FD2163B0DC100374E48 /* Operacio.m */,
+				9F671FCE163B0DC100374E48 /* Categoria.h */,
+				9F671FCF163B0DC100374E48 /* Categoria.m */,
+				9F671FCB163B0DC100374E48 /* Repte.h */,
+				9F671FCC163B0DC100374E48 /* Repte.m */,
+				9F671FC8163B0DC100374E48 /* Targeta.h */,
+				9F671FC9163B0DC100374E48 /* Targeta.m */,
+				9F671FC3163AF81E00374E48 /* finapps.xcdatamodeld */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +347,15 @@
 				9F671F8A163AF7E800374E48 /* LFAppDelegate.m in Sources */,
 				9F671F96163AF7E800374E48 /* LFFirstViewController.m in Sources */,
 				9F671F9D163AF7E800374E48 /* LFSecondViewController.m in Sources */,
+				9F671FC5163AF81E00374E48 /* finapps.xcdatamodeld in Sources */,
+				9F671FCA163B0DC100374E48 /* Targeta.m in Sources */,
+				9F671FCD163B0DC100374E48 /* Repte.m in Sources */,
+				9F671FD0163B0DC100374E48 /* Categoria.m in Sources */,
+				9F671FD3163B0DC100374E48 /* Operacio.m in Sources */,
+				9F671FD6163B0DC100374E48 /* Objectiu.m in Sources */,
+				9F671FD9163B0DC100374E48 /* CompteEstalvi.m in Sources */,
+				9F671FDC163B0DC100374E48 /* Usuari.m in Sources */,
+				9F671FDF163B0DC100374E48 /* CompteCorrent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +530,7 @@
 				9F671FBB163AF7E800374E48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F671FBC163AF7E800374E48 /* Build configuration list for PBXNativeTarget "finappsTests" */ = {
 			isa = XCConfigurationList;
@@ -478,8 +539,22 @@
 				9F671FBE163AF7E800374E48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9F671FC3163AF81E00374E48 /* finapps.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9F671FC4163AF81E00374E48 /* finapps.xcdatamodel */,
+			);
+			currentVersion = 9F671FC4163AF81E00374E48 /* finapps.xcdatamodel */;
+			path = finapps.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9F671F6C163AF7E700374E48 /* Project object */;
 }
