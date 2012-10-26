@@ -68,9 +68,16 @@
     
     concept.text = [NSString stringWithFormat:@"%@",operacio.concept];
     if ([operacio.value floatValue] < 0.0){
-        [ammount setTextColor:[UIColor colorWithRed:178/255 green:0 blue:0 alpha:1.0]];
+        [ammount setTextColor:[UIColor colorWithRed:178.0/255.0 green:0 blue:0 alpha:1.0]];
+    }
+    else{
+        [ammount setTextColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:1.0]];
     }
     ammount.text = [NSString stringWithFormat:@"%.2f €",[operacio.value floatValue]];
+    
+    UIImageView *recurrent = (UIImageView *)[cell viewWithTag:4];
+    
+    if (indexPath.row % 2 == 0) [recurrent setHidden:YES];
     
     return cell;
 }
