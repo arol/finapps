@@ -10,5 +10,7 @@
 
 @interface LFFirstViewController : UIViewController 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UILabel *proporcioMensual;
+@property (weak, nonatomic) IBOutlet UILabel *dinersCompte;
 
 @end

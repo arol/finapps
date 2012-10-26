@@ -19,9 +19,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSString *accountId = @"508ac427e4b0d77699b685d4";
+    
     [CompteCorrent findAllComptesCorrentsWith:^(NSArray *comptesCorrents) {
 
         for (CompteCorrent *cc in comptesCorrents) {
+            if ([cc.ident isEqualToString:accountId]){
+                self.dinersCompte.text =  [NSString stringWithFormat:@"%.2f €",[cc.availableBalance floatValue]];
+                self.proporcioMensual.text = [NSString stringWithFormat:@"%.2f €",[cc.availableBalance floatValue] / 30];
+            }
             NSLog(@"%@ : %@",cc.accountNumber,cc.availableBalance);
         }
         NSLog(@"==========================");
@@ -29,7 +35,6 @@
         NSLog(@"%@",error);
     }];
     
-    NSString *accountId = @"508ac427e4b0d77699b685d4";
     
     [Operacio findAllOperacionsInAccount:accountId With:^(NSArray *operacions) {
         self.operacions = operacions;
@@ -63,7 +68,7 @@
     
     concept.text = [NSString stringWithFormat:@"%@",operacio.concept];
     if ([operacio.value floatValue] < 0.0){
-        [ammount setTextColor:[UIColor redColor]];   
+        [ammount setTextColor:[UIColor colorWithRed:178/255 green:0 blue:0 alpha:1.0]];
     }
     ammount.text = [NSString stringWithFormat:@"%.2f €",[operacio.value floatValue]];
     
