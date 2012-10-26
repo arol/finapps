@@ -7,6 +7,7 @@
 //
 
 #import "LFFirstViewController.h"
+#import "CompteCorrent+Functions.h"
 
 @interface LFFirstViewController ()
 
@@ -17,7 +18,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [CompteCorrent findAllComptesCorrentsWith:^(NSArray *comptesCorrents) {
+        NSLog(@"%@",comptesCorrents);
+        for (CompteCorrent *cc in comptesCorrents) {
+            NSLog(@"%@ : %@",cc.accountNumber,cc.availableBalance);
+        }
+    } errorResponse:^(NSError *error) {
+        NSLog(@"%@",error);
+    }];
 }
 
 - (void)didReceiveMemoryWarning
