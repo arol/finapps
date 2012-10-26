@@ -20,9 +20,6 @@
 		9F671F96163AF7E800374E48 /* LFFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F671F95163AF7E800374E48 /* LFFirstViewController.m */; };
 		9F671F98163AF7E800374E48 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F671F97163AF7E800374E48 /* first.png */; };
 		9F671F9A163AF7E800374E48 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F671F99163AF7E800374E48 /* first@2x.png */; };
-		9F671F9D163AF7E800374E48 /* LFSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F671F9C163AF7E800374E48 /* LFSecondViewController.m */; };
-		9F671F9F163AF7E800374E48 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F671F9E163AF7E800374E48 /* second.png */; };
-		9F671FA1163AF7E800374E48 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F671FA0163AF7E800374E48 /* second@2x.png */; };
 		9F671FA9163AF7E800374E48 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F671FA8163AF7E800374E48 /* SenTestingKit.framework */; };
 		9F671FAA163AF7E800374E48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F671F79163AF7E700374E48 /* UIKit.framework */; };
 		9F671FAB163AF7E800374E48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F671F7B163AF7E700374E48 /* Foundation.framework */; };
@@ -30,6 +27,7 @@
 		9F671FB6163AF7E800374E48 /* finappsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FB5163AF7E800374E48 /* finappsTests.m */; };
 		9F671FC5163AF81E00374E48 /* finapps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FC3163AF81E00374E48 /* finapps.xcdatamodeld */; };
 		9F671FE1163B0EF000374E48 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F671FE0163B0EF000374E48 /* CoreData.framework */; };
+		A058FDAD163B35D900037FCC /* Operacio+Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = A058FDAC163B35D900037FCC /* Operacio+Functions.m */; };
 		A0836565163B16BF00E78308 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A083654F163B16BF00E78308 /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A0836566163B16BF00E78308 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A0836551163B16BF00E78308 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A0836567163B16BF00E78308 /* AFImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A0836553163B16BF00E78308 /* AFImageCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -107,10 +105,6 @@
 		9F671F95163AF7E800374E48 /* LFFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFFirstViewController.m; sourceTree = "<group>"; };
 		9F671F97163AF7E800374E48 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		9F671F99163AF7E800374E48 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		9F671F9B163AF7E800374E48 /* LFSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFSecondViewController.h; sourceTree = "<group>"; };
-		9F671F9C163AF7E800374E48 /* LFSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFSecondViewController.m; sourceTree = "<group>"; };
-		9F671F9E163AF7E800374E48 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		9F671FA0163AF7E800374E48 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		9F671FA7163AF7E800374E48 /* finappsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = finappsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F671FA8163AF7E800374E48 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9F671FB0163AF7E800374E48 /* finappsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "finappsTests-Info.plist"; sourceTree = "<group>"; };
@@ -119,6 +113,9 @@
 		9F671FB5163AF7E800374E48 /* finappsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = finappsTests.m; sourceTree = "<group>"; };
 		9F671FC4163AF81E00374E48 /* finapps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = finapps.xcdatamodel; sourceTree = "<group>"; };
 		9F671FE0163B0EF000374E48 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9F671FE6163B1AEE00374E48 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		A058FDAB163B35D900037FCC /* Operacio+Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Operacio+Functions.h"; sourceTree = "<group>"; };
+		A058FDAC163B35D900037FCC /* Operacio+Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Operacio+Functions.m"; sourceTree = "<group>"; };
 		A083654E163B16BF00E78308 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		A083654F163B16BF00E78308 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		A0836550163B16BF00E78308 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -214,7 +211,6 @@
 		A08367CB163B1E2000E78308 /* Usuari.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Usuari.m; sourceTree = "<group>"; };
 		A08367CD163B1E6700E78308 /* CompteCorrent+Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CompteCorrent+Functions.h"; sourceTree = "<group>"; };
 		A08367CE163B1E6700E78308 /* CompteCorrent+Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CompteCorrent+Functions.m"; sourceTree = "<group>"; };
-		9F671FE6163B1AEE00374E48 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -287,10 +283,6 @@
 				9F671F95163AF7E800374E48 /* LFFirstViewController.m */,
 				9F671F97163AF7E800374E48 /* first.png */,
 				9F671F99163AF7E800374E48 /* first@2x.png */,
-				9F671F9B163AF7E800374E48 /* LFSecondViewController.h */,
-				9F671F9C163AF7E800374E48 /* LFSecondViewController.m */,
-				9F671F9E163AF7E800374E48 /* second.png */,
-				9F671FA0163AF7E800374E48 /* second@2x.png */,
 				9F671F80163AF7E700374E48 /* Supporting Files */,
 			);
 			path = finapps;
@@ -348,6 +340,8 @@
 				A08367BC163B1E1F00E78308 /* Repte.m */,
 				A08367B8163B1E1F00E78308 /* Operacio.h */,
 				A08367B9163B1E1F00E78308 /* Operacio.m */,
+				A058FDAB163B35D900037FCC /* Operacio+Functions.h */,
+				A058FDAC163B35D900037FCC /* Operacio+Functions.m */,
 				A08367CD163B1E6700E78308 /* CompteCorrent+Functions.h */,
 				A08367CE163B1E6700E78308 /* CompteCorrent+Functions.m */,
 			);
@@ -574,8 +568,6 @@
 				9F671F93163AF7E800374E48 /* MainStoryboard.storyboard in Resources */,
 				9F671F98163AF7E800374E48 /* first.png in Resources */,
 				9F671F9A163AF7E800374E48 /* first@2x.png in Resources */,
-				9F671F9F163AF7E800374E48 /* second.png in Resources */,
-				9F671FA1163AF7E800374E48 /* second@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,7 +605,6 @@
 				9F671F86163AF7E800374E48 /* main.m in Sources */,
 				9F671F8A163AF7E800374E48 /* LFAppDelegate.m in Sources */,
 				9F671F96163AF7E800374E48 /* LFFirstViewController.m in Sources */,
-				9F671F9D163AF7E800374E48 /* LFSecondViewController.m in Sources */,
 				9F671FC5163AF81E00374E48 /* finapps.xcdatamodeld in Sources */,
 				A0836565163B16BF00E78308 /* AFHTTPClient.m in Sources */,
 				A0836566163B16BF00E78308 /* AFHTTPRequestOperation.m in Sources */,
@@ -661,6 +652,7 @@
 				A08367C9163B1E1F00E78308 /* Targeta.m in Sources */,
 				A08367CC163B1E2000E78308 /* Usuari.m in Sources */,
 				A08367CF163B1E6700E78308 /* CompteCorrent+Functions.m in Sources */,
+				A058FDAD163B35D900037FCC /* Operacio+Functions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

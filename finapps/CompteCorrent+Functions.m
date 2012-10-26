@@ -68,12 +68,12 @@
 {
     CompteCorrent *cc = [CompteCorrent createEntity];
     cc.accountNumber = [JSON valueForKeyPath:@"data.accountNumber"];
-    cc.actualBalance = [JSON valueForKeyPath:@"data.actualBalance"];;;
-    cc.availableBalance = [JSON valueForKeyPath:@"data.availableBalance"];;;
-    cc.currency = [JSON valueForKeyPath:@"data.currency"];;;
-    cc.iban = [JSON valueForKeyPath:@"data.iban"];;
-    cc.ident = [JSON valueForKeyPath:@"data.id"];;
-    cc.office = [JSON valueForKeyPath:@"data.office"];;
+    cc.actualBalance = [JSON valueForKeyPath:@"data.actualBalance"];
+    cc.availableBalance = [JSON valueForKeyPath:@"data.availableBalance"];
+    cc.currency = [JSON valueForKeyPath:@"data.currency"];
+    cc.iban = [JSON valueForKeyPath:@"data.iban"];
+    cc.ident = [JSON valueForKeyPath:@"data.id"];
+    cc.office = [JSON valueForKeyPath:@"data.office"];
     cc.retainedBalance = [JSON valueForKeyPath:@"data.retainedBalance"];
 #warning isEstalvi al parse
     cc.isEstalvi = NO;

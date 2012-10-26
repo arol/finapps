@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LFFirstViewController : UIViewController
+@interface LFFirstViewController : UIViewController 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
