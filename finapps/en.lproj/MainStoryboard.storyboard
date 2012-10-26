@@ -95,7 +95,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="7"/>
+                    <tabBarItem key="tabBarItem" title="Extracte" image="first" id="7"/>
                     <connections>
                         <outlet property="dinersCompte" destination="cpf-lb-CLs" id="U6m-Wd-veD"/>
                         <outlet property="proporcioMensual" destination="KcW-aG-iBe" id="q8C-1q-4xb"/>
@@ -104,9 +104,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="671" y="180"/>
+            <point key="canvasLocation" x="671" y="842"/>
         </scene>
-        <!--View Controller - Extracte-->
+        <!--View Controller - Estalvi-->
         <scene sceneID="vUN-Ju-nj5">
             <objects>
                 <viewController id="SPh-YA-iIF" sceneMemberID="viewController">
@@ -115,11 +115,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Extracte" id="OEc-Vq-usx"/>
+                    <tabBarItem key="tabBarItem" title="Estalvi" id="OEc-Vq-usx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2gz-Su-dxE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="671" y="873"/>
+            <point key="canvasLocation" x="671" y="142"/>
         </scene>
         <!--View Controller - Ajuda-->
         <scene sceneID="HXj-8H-9Ya">
@@ -149,8 +149,8 @@
                     <connections>
                         <segue destination="jpO-c9-8vj" kind="relationship" relationship="viewControllers" id="l9f-Bf-t1o"/>
                         <segue destination="Sk6-5F-ZOa" kind="relationship" relationship="viewControllers" id="xnK-by-IU9"/>
-                        <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
                         <segue destination="SPh-YA-iIF" kind="relationship" relationship="viewControllers" id="TNB-us-2xS"/>
+                        <segue destination="2" kind="relationship" relationship="viewControllers" id="26"/>
                         <segue destination="8Zm-q1-8P1" kind="relationship" relationship="viewControllers" id="9XC-qx-LQp"/>
                     </connections>
                 </tabBarController>
