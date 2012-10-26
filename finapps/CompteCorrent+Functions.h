@@ -16,4 +16,7 @@ typedef void (^SuccessElem)(CompteCorrent *compteCorrent);
 
 + (void) findAllComptesCorrentsWith:(SuccessListBlock)okResponse errorResponse:(ErrorBlock)errorResponse;
 
+-(void)checkIfIsSavingsAccount;
+
+
 @end

@@ -27,6 +27,8 @@
 		9F671FB6163AF7E800374E48 /* finappsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FB5163AF7E800374E48 /* finappsTests.m */; };
 		9F671FC5163AF81E00374E48 /* finapps.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FC3163AF81E00374E48 /* finapps.xcdatamodeld */; };
 		9F671FE1163B0EF000374E48 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F671FE0163B0EF000374E48 /* CoreData.framework */; };
+		9F671FF2163B359800374E48 /* LFParseConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FF1163B359800374E48 /* LFParseConnector.m */; };
+		9F671FF6163B4AD400374E48 /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F671FF5163B4AD400374E48 /* Categoria.m */; };
 		A058FDAD163B35D900037FCC /* Operacio+Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = A058FDAC163B35D900037FCC /* Operacio+Functions.m */; };
 		A058FDB1163B4E6D00037FCC /* recurrent.png in Resources */ = {isa = PBXBuildFile; fileRef = A058FDAF163B4E6D00037FCC /* recurrent.png */; };
 		A058FDB2163B4E6D00037FCC /* recurrent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A058FDB0163B4E6D00037FCC /* recurrent@2x.png */; };
@@ -73,7 +75,6 @@
 		A08367BA163B1E1F00E78308 /* Operacio.m in Sources */ = {isa = PBXBuildFile; fileRef = A08367B9163B1E1F00E78308 /* Operacio.m */; };
 		A08367BD163B1E1F00E78308 /* Repte.m in Sources */ = {isa = PBXBuildFile; fileRef = A08367BC163B1E1F00E78308 /* Repte.m */; };
 		A08367C0163B1E1F00E78308 /* CompteCorrent.m in Sources */ = {isa = PBXBuildFile; fileRef = A08367BF163B1E1F00E78308 /* CompteCorrent.m */; };
-		A08367C3163B1E1F00E78308 /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = A08367C2163B1E1F00E78308 /* Categoria.m */; };
 		A08367C6163B1E1F00E78308 /* Objectiu.m in Sources */ = {isa = PBXBuildFile; fileRef = A08367C5163B1E1F00E78308 /* Objectiu.m */; };
 		A08367C9163B1E1F00E78308 /* Targeta.m in Sources */ = {isa = PBXBuildFile; fileRef = A08367C8163B1E1F00E78308 /* Targeta.m */; };
 		A08367CC163B1E2000E78308 /* Usuari.m in Sources */ = {isa = PBXBuildFile; fileRef = A08367CB163B1E2000E78308 /* Usuari.m */; };
@@ -118,6 +119,10 @@
 		9F671FC4163AF81E00374E48 /* finapps.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = finapps.xcdatamodel; sourceTree = "<group>"; };
 		9F671FE0163B0EF000374E48 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		9F671FE6163B1AEE00374E48 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		9F671FF0163B359800374E48 /* LFParseConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFParseConnector.h; sourceTree = "<group>"; };
+		9F671FF1163B359800374E48 /* LFParseConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFParseConnector.m; sourceTree = "<group>"; };
+		9F671FF4163B4AD400374E48 /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categoria.h; sourceTree = "<group>"; };
+		9F671FF5163B4AD400374E48 /* Categoria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categoria.m; sourceTree = "<group>"; };
 		A058FDAB163B35D900037FCC /* Operacio+Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Operacio+Functions.h"; sourceTree = "<group>"; };
 		A058FDAC163B35D900037FCC /* Operacio+Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Operacio+Functions.m"; sourceTree = "<group>"; };
 		A058FDAF163B4E6D00037FCC /* recurrent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = recurrent.png; path = imatges/recurrent.png; sourceTree = "<group>"; };
@@ -209,8 +214,6 @@
 		A08367BC163B1E1F00E78308 /* Repte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Repte.m; sourceTree = "<group>"; };
 		A08367BE163B1E1F00E78308 /* CompteCorrent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompteCorrent.h; sourceTree = "<group>"; };
 		A08367BF163B1E1F00E78308 /* CompteCorrent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompteCorrent.m; sourceTree = "<group>"; };
-		A08367C1163B1E1F00E78308 /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categoria.h; sourceTree = "<group>"; };
-		A08367C2163B1E1F00E78308 /* Categoria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categoria.m; sourceTree = "<group>"; };
 		A08367C4163B1E1F00E78308 /* Objectiu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Objectiu.h; sourceTree = "<group>"; };
 		A08367C5163B1E1F00E78308 /* Objectiu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Objectiu.m; sourceTree = "<group>"; };
 		A08367C7163B1E1F00E78308 /* Targeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Targeta.h; sourceTree = "<group>"; };
@@ -335,14 +338,14 @@
 			isa = PBXGroup;
 			children = (
 				9F671FC3163AF81E00374E48 /* finapps.xcdatamodeld */,
+				9F671FF4163B4AD400374E48 /* Categoria.h */,
+				9F671FF5163B4AD400374E48 /* Categoria.m */,
 				A08367CA163B1E2000E78308 /* Usuari.h */,
 				A08367CB163B1E2000E78308 /* Usuari.m */,
 				A08367C7163B1E1F00E78308 /* Targeta.h */,
 				A08367C8163B1E1F00E78308 /* Targeta.m */,
 				A08367C4163B1E1F00E78308 /* Objectiu.h */,
 				A08367C5163B1E1F00E78308 /* Objectiu.m */,
-				A08367C1163B1E1F00E78308 /* Categoria.h */,
-				A08367C2163B1E1F00E78308 /* Categoria.m */,
 				A08367BE163B1E1F00E78308 /* CompteCorrent.h */,
 				A08367BF163B1E1F00E78308 /* CompteCorrent.m */,
 				A08367BB163B1E1F00E78308 /* Repte.h */,
@@ -373,6 +376,8 @@
 			children = (
 				A0836570163B172800E78308 /* LFApiFinappsConnector.h */,
 				A0836571163B172800E78308 /* LFApiFinappsConnector.m */,
+				9F671FF0163B359800374E48 /* LFParseConnector.h */,
+				9F671FF1163B359800374E48 /* LFParseConnector.m */,
 			);
 			name = "API connector";
 			sourceTree = "<group>";
@@ -671,11 +676,12 @@
 				A08367BA163B1E1F00E78308 /* Operacio.m in Sources */,
 				A08367BD163B1E1F00E78308 /* Repte.m in Sources */,
 				A08367C0163B1E1F00E78308 /* CompteCorrent.m in Sources */,
-				A08367C3163B1E1F00E78308 /* Categoria.m in Sources */,
 				A08367C6163B1E1F00E78308 /* Objectiu.m in Sources */,
 				A08367C9163B1E1F00E78308 /* Targeta.m in Sources */,
 				A08367CC163B1E2000E78308 /* Usuari.m in Sources */,
 				A08367CF163B1E6700E78308 /* CompteCorrent+Functions.m in Sources */,
+				9F671FF2163B359800374E48 /* LFParseConnector.m in Sources */,
+				9F671FF6163B4AD400374E48 /* Categoria.m in Sources */,
 				A058FDAD163B35D900037FCC /* Operacio+Functions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

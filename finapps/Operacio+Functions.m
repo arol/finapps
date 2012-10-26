@@ -21,7 +21,7 @@
          parameters:nil
             success:^(AFHTTPRequestOperation *operation, id JSON) {
                 NSMutableArray *operacions = [[NSMutableArray alloc] init];
-                for (NSString *operacioDictionary in [JSON valueForKey:@"data"]) {
+                for (NSDictionary* operacioDictionary in [JSON valueForKey:@"data"]) {
                     Operacio *operacio = [Operacio createObjectWithParameters:operacioDictionary];
                     [operacions addObject:operacio];
                 }
