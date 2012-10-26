@@ -2,26 +2,27 @@
 //  Targeta.m
 //  finapps
 //
-//  Created by Arol Viñolas on 26/10/12.
+//  Created by David Cortés Fulla on 26/10/12.
 //  Copyright (c) 2012 Lafosca. All rights reserved.
 //
 
 #import "Targeta.h"
+#import "CompteCorrent.h"
 
 
 @implementation Targeta
 
-@dynamic ident;
-@dynamic number;
-@dynamic deprecateDate;
-@dynamic securityCode;
-@dynamic mode;
-@dynamic issuer;
-@dynamic creditLimit;
-@dynamic dueDate;
-@dynamic totalDebt;
 @dynamic creditAvailable;
+@dynamic creditLimit;
+@dynamic deprecateDate;
+@dynamic dueDate;
+@dynamic ident;
 @dynamic interestRate;
+@dynamic issuer;
+@dynamic mode;
+@dynamic number;
+@dynamic securityCode;
+@dynamic totalDebt;
 @dynamic compte;
 
 @end

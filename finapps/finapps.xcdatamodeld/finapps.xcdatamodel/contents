@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C54" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Categoria" representedClassName="Categoria" syncable="YES">
         <attribute name="ident" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nom" optional="YES" attributeType="String" syncable="YES"/>
@@ -13,19 +13,18 @@
         <attribute name="currency" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="iban" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="ident" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isEstalvi" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="office" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="retainedBalance" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="objectiu" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Objectiu" inverseName="compte" inverseEntity="Objectiu" syncable="YES"/>
         <relationship name="operacions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Operacio" inverseName="compte" inverseEntity="Operacio" syncable="YES"/>
         <relationship name="targetes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Targeta" inverseName="compte" inverseEntity="Targeta" syncable="YES"/>
         <relationship name="usuari" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Usuari" inverseName="comptes" inverseEntity="Usuari" syncable="YES"/>
     </entity>
-    <entity name="CompteEstalvi" representedClassName="CompteEstalvi" parentEntity="CompteCorrent" syncable="YES">
-        <relationship name="objectiu" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Objectiu" inverseName="compte" inverseEntity="Objectiu" syncable="YES"/>
-    </entity>
     <entity name="Objectiu" representedClassName="Objectiu" syncable="YES">
         <attribute name="dueDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="value" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <relationship name="compte" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CompteEstalvi" inverseName="objectiu" inverseEntity="CompteEstalvi" syncable="YES"/>
+        <relationship name="compte" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CompteCorrent" inverseName="objectiu" inverseEntity="CompteCorrent" syncable="YES"/>
     </entity>
     <entity name="Operacio" representedClassName="Operacio" syncable="YES">
         <attribute name="actualBalance" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
@@ -74,13 +73,12 @@
         <relationship name="reptes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repte" inverseName="usuari" inverseEntity="Repte" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Categoria" positionX="-7677" positionY="-19953" width="128" height="103"/>
+        <element name="CompteCorrent" positionX="-7668" positionY="-19521" width="128" height="238"/>
+        <element name="Objectiu" positionX="-7668" positionY="-19206" width="117" height="88"/>
         <element name="Operacio" positionX="-7677" positionY="-19800" width="128" height="193"/>
-        <element name="CompteCorrent" positionX="-7668" positionY="-19521" width="128" height="208"/>
-        <element name="CompteEstalvi" positionX="-7668" positionY="-19287" width="128" height="58"/>
+        <element name="Repte" positionX="-7317" positionY="-19890" width="128" height="103"/>
         <element name="Targeta" positionX="-7301" positionY="-19420" width="128" height="223"/>
         <element name="Usuari" positionX="-7328" positionY="-19692" width="128" height="223"/>
-        <element name="Categoria" positionX="-7677" positionY="-19953" width="128" height="103"/>
-        <element name="Objectiu" positionX="-7668" positionY="-19206" width="128" height="88"/>
-        <element name="Repte" positionX="-7317" positionY="-19890" width="128" height="103"/>
     </elements>
 </model>
