@@ -305,6 +305,7 @@
 				9F671F8B163AF7E800374E48 /* Default.png */,
 				9F671F8D163AF7E800374E48 /* Default@2x.png */,
 				9F671F8F163AF7E800374E48 /* Default-568h@2x.png */,
+				9F671FE6163B1AEE00374E48 /* Constants.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
