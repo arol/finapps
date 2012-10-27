@@ -7,6 +7,7 @@
 //
 
 #import "LFAppDelegate.h"
+#import "LFAccountController.h"
 
 @implementation LFAppDelegate
 
@@ -14,6 +15,7 @@
 {
     // Override point for customization after application launch.
     [MagicalRecord setupCoreDataStackWithAutoMigratingSqliteStoreNamed:@"finapps"];
+    [[LFAccountController sharedAccountController] evaluateOperations:[Operacio findAll]];
     return YES;
 }
 							
