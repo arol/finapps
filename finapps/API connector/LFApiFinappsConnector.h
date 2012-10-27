@@ -13,4 +13,6 @@
 + (LFApiFinappsConnector *)sharedClient;
 - (id)initWithBaseURL:(NSURL *)url;
 
+//@property (nonatomic,strong) NSString *
+
 @end

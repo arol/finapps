@@ -451,6 +451,8 @@
 				9F672050163B7BBC00374E48 /* LFDashboardViewController.m */,
 				9F6720D2163BD94A00374E48 /* UILabel+NumberAnimation.h */,
 				9F6720D3163BD94A00374E48 /* UILabel+NumberAnimation.m */,
+				9F6720DE163BDD5A00374E48 /* LFLoginViewController.h */,
+				9F6720DF163BDD5A00374E48 /* LFLoginViewController.m */,
 			);
 			path = finapps;
 			sourceTree = "<group>";
@@ -527,6 +529,10 @@
 		9F671FFB163B519D00374E48 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9F6720D6163BDB9F00374E48 /* categoria-recursiva-activa.png */,
+				9F6720D7163BDB9F00374E48 /* categoria-recursiva-activa@2x.png */,
+				9F6720D8163BDB9F00374E48 /* categoria-recursiva-desactivada.png */,
+				9F6720D9163BDB9F00374E48 /* categoria-recursiva-desactivada@2x.png */,
 				9F6720A2163BD73D00374E48 /* tab-ajuda.png */,
 				9F6720A3163BD73D00374E48 /* tab-estalvi.png */,
 				9F6720A4163BD73D00374E48 /* tab-ajuda@2x.png */,
@@ -570,6 +576,8 @@
 		9F672032163B690B00374E48 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
+				9F6720E1163BE10B00374E48 /* fixed-nav-bar.png */,
+				9F6720E2163BE10B00374E48 /* fixed-nav-bar@2x.png */,
 				9F67204B163B6B4500374E48 /* balance-bar.png */,
 				9F67204C163B6B4500374E48 /* balance-bar@2x.png */,
 				9F672034163B691B00374E48 /* balance-negative-bar.png */,
@@ -985,6 +993,7 @@
 				A063BE76163B9B0600378BAC /* CERoundProgressLayer.m in Sources */,
 				A063BE77163B9B0600378BAC /* CERoundProgressView.m in Sources */,
 				A063BE7B163B9DA300378BAC /* LFObjectiusViewController.m in Sources */,
+				9F6720E0163BDD5A00374E48 /* LFLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
