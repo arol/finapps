@@ -9,6 +9,8 @@
 #import "LFObjectiusViewController.h"
 #import "Objectiu.h"
 
+#define TIME_OF_TRANSITION 0.015
+
 @interface LFObjectiusViewController ()
     @property (nonatomic,assign) int acumulat;
     @property (nonatomic,strong) Objectiu *objectiu;
@@ -57,7 +59,8 @@
         [self.botoNouObjectiu setHidden:YES];
         self.total.text = @"0";
         self.acumulat = 0;
-        [self performSelector:@selector(omplirAconseguit) withObject:nil afterDelay:0.015];
+        NSNumber *aconseguit = [NSNumber numberWithFloat:[self.objectiu.value floatValue] * 0.8];
+        [self performSelector:@selector(omplirAconseguit:) withObject:aconseguit afterDelay:0.015];
         [self.total setHidden:NO];
         [self.restant setHidden:NO];
         [self.progressView setHidden:NO];
@@ -79,24 +82,29 @@
     [self.segmentedControl setFrame:CGRectMake(18, 6, 290, 30)];
     [self.segmentedControl setSegmentedControlStyle:UISegmentedControlStyleBezeled];    
 }
-- (void) omplirAconseguit
+- (void) omplirAconseguit:(NSNumber *)valor
 {
-    if (self.acumulat >= 4138){
-        self.total.text = [NSString stringWithFormat:@"4.138 €"];
+    if (self.acumulat >= [valor intValue]){
+        self.total.text = [NSString stringWithFormat:@"%i €",[valor intValue]];
         return;
     }
-    
-    self.acumulat+=122;
+    int numberOfCalls = [self numberOfCallsForDuration:0.5];
+    self.acumulat += [valor intValue] / numberOfCalls;
     self.total.text = [NSString stringWithFormat:@"%i €",self.acumulat];
-    self.restant.text = [NSString stringWithFormat:@"%i €",5000 - self.acumulat];
+    self.restant.text = [NSString stringWithFormat:@"%i €",[self.objectiu.value intValue] - self.acumulat];
     NSLog(@"%@",[NSString stringWithFormat:@"%i ",self.acumulat]);
-    [self performSelector:@selector(omplirAconseguit) withObject:nil afterDelay:0.015];
+    [self performSelector:@selector(omplirAconseguit:) withObject:valor afterDelay:TIME_OF_TRANSITION];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (float) numberOfCallsForDuration:(float)duration
+{
+    return (float)(duration / TIME_OF_TRANSITION);
 }
 
 @end
