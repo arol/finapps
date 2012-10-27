@@ -40,6 +40,14 @@
 		A058FDCA163B5BB800037FCC /* UIAlertView+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A058FDC7163B5BB800037FCC /* UIAlertView+MKBlockAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A058FDCD163B68AF00037FCC /* recordar.png in Resources */ = {isa = PBXBuildFile; fileRef = A058FDCB163B68AF00037FCC /* recordar.png */; };
 		A058FDCE163B68AF00037FCC /* recordar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A058FDCC163B68AF00037FCC /* recordar@2x.png */; };
+		A063BE6F163B99F900378BAC /* objectiuFons.png in Resources */ = {isa = PBXBuildFile; fileRef = A063BE6D163B99F900378BAC /* objectiuFons.png */; };
+		A063BE70163B99F900378BAC /* objectiuFons@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A063BE6E163B99F900378BAC /* objectiuFons@2x.png */; };
+		A063BE76163B9B0600378BAC /* CERoundProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A063BE73163B9B0600378BAC /* CERoundProgressLayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A063BE77163B9B0600378BAC /* CERoundProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = A063BE75163B9B0600378BAC /* CERoundProgressView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A063BE7B163B9DA300378BAC /* LFObjectiusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A063BE7A163B9DA300378BAC /* LFObjectiusViewController.m */; };
+		A063BE82163B9F6200378BAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A063BE81163B9F6200378BAC /* QuartzCore.framework */; };
+		A063BE85163BA37D00378BAC /* navbar.png in Resources */ = {isa = PBXBuildFile; fileRef = A063BE83163BA37D00378BAC /* navbar.png */; };
+		A063BE86163BA37D00378BAC /* navbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A063BE84163BA37D00378BAC /* navbar@2x.png */; };
 		A0836565163B16BF00E78308 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A083654F163B16BF00E78308 /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A0836566163B16BF00E78308 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A0836551163B16BF00E78308 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A0836567163B16BF00E78308 /* AFImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A0836553163B16BF00E78308 /* AFImageCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -146,6 +154,17 @@
 		A058FDC7163B5BB800037FCC /* UIAlertView+MKBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKBlockAdditions.m"; sourceTree = "<group>"; };
 		A058FDCB163B68AF00037FCC /* recordar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = recordar.png; path = imatges/recordar.png; sourceTree = "<group>"; };
 		A058FDCC163B68AF00037FCC /* recordar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "recordar@2x.png"; path = "imatges/recordar@2x.png"; sourceTree = "<group>"; };
+		A063BE6D163B99F900378BAC /* objectiuFons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = objectiuFons.png; sourceTree = "<group>"; };
+		A063BE6E163B99F900378BAC /* objectiuFons@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "objectiuFons@2x.png"; sourceTree = "<group>"; };
+		A063BE72163B9B0600378BAC /* CERoundProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CERoundProgressLayer.h; sourceTree = "<group>"; };
+		A063BE73163B9B0600378BAC /* CERoundProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CERoundProgressLayer.m; sourceTree = "<group>"; };
+		A063BE74163B9B0600378BAC /* CERoundProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CERoundProgressView.h; sourceTree = "<group>"; };
+		A063BE75163B9B0600378BAC /* CERoundProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CERoundProgressView.m; sourceTree = "<group>"; };
+		A063BE79163B9DA300378BAC /* LFObjectiusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFObjectiusViewController.h; sourceTree = "<group>"; };
+		A063BE7A163B9DA300378BAC /* LFObjectiusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFObjectiusViewController.m; sourceTree = "<group>"; };
+		A063BE81163B9F6200378BAC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A063BE83163BA37D00378BAC /* navbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = navbar.png; path = imatges/navbar.png; sourceTree = "<group>"; };
+		A063BE84163BA37D00378BAC /* navbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "navbar@2x.png"; path = "imatges/navbar@2x.png"; sourceTree = "<group>"; };
 		A083654E163B16BF00E78308 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		A083654F163B16BF00E78308 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		A0836550163B16BF00E78308 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -246,6 +265,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A063BE82163B9F6200378BAC /* QuartzCore.framework in Frameworks */,
 				9F671FE1163B0EF000374E48 /* CoreData.framework in Frameworks */,
 				9F671F7A163AF7E700374E48 /* UIKit.framework in Frameworks */,
 				9F671F7C163AF7E700374E48 /* Foundation.framework in Frameworks */,
@@ -269,6 +289,7 @@
 		9F671F6A163AF7E700374E48 = {
 			isa = PBXGroup;
 			children = (
+				A063BE81163B9F6200378BAC /* QuartzCore.framework */,
 				9F671F7F163AF7E700374E48 /* finapps */,
 				9F671FAE163AF7E800374E48 /* finappsTests */,
 				9F671F78163AF7E700374E48 /* Frameworks */,
@@ -303,6 +324,7 @@
 		9F671F7F163AF7E700374E48 /* finapps */ = {
 			isa = PBXGroup;
 			children = (
+				A063BE78163B9B0A00378BAC /* RoundProgressBar */,
 				A083653E163B166400E78308 /* API connector */,
 				9F671FC7163AF82A00374E48 /* models */,
 				9F671F88163AF7E800374E48 /* LFAppDelegate.h */,
@@ -310,6 +332,8 @@
 				9F671F91163AF7E800374E48 /* MainStoryboard.storyboard */,
 				A058FDBC163B538300037FCC /* LFSelectorCategoriaViewController.h */,
 				A058FDBD163B538300037FCC /* LFSelectorCategoriaViewController.m */,
+				A063BE79163B9DA300378BAC /* LFObjectiusViewController.h */,
+				A063BE7A163B9DA300378BAC /* LFObjectiusViewController.m */,
 				9F671F94163AF7E800374E48 /* LFFirstViewController.h */,
 				9F671F95163AF7E800374E48 /* LFFirstViewController.m */,
 				9F671F97163AF7E800374E48 /* first.png */,
@@ -383,6 +407,10 @@
 		A058FDB3163B4E7200037FCC /* Imatges */ = {
 			isa = PBXGroup;
 			children = (
+				A063BE83163BA37D00378BAC /* navbar.png */,
+				A063BE84163BA37D00378BAC /* navbar@2x.png */,
+				A063BE6D163B99F900378BAC /* objectiuFons.png */,
+				A063BE6E163B99F900378BAC /* objectiuFons@2x.png */,
 				A058FDCB163B68AF00037FCC /* recordar.png */,
 				A058FDCC163B68AF00037FCC /* recordar@2x.png */,
 				A058FDB4163B4EEF00037FCC /* backgroundTableView.png */,
@@ -406,6 +434,17 @@
 			);
 			name = BlockAdditions;
 			path = finapps/BlockAdditions;
+			sourceTree = "<group>";
+		};
+		A063BE78163B9B0A00378BAC /* RoundProgressBar */ = {
+			isa = PBXGroup;
+			children = (
+				A063BE72163B9B0600378BAC /* CERoundProgressLayer.h */,
+				A063BE73163B9B0600378BAC /* CERoundProgressLayer.m */,
+				A063BE74163B9B0600378BAC /* CERoundProgressView.h */,
+				A063BE75163B9B0600378BAC /* CERoundProgressView.m */,
+			);
+			name = RoundProgressBar;
 			sourceTree = "<group>";
 		};
 		A083653E163B166400E78308 /* API connector */ = {
@@ -636,6 +675,10 @@
 				A058FDB7163B4EEF00037FCC /* backgroundTableView@2x.png in Resources */,
 				A058FDCD163B68AF00037FCC /* recordar.png in Resources */,
 				A058FDCE163B68AF00037FCC /* recordar@2x.png in Resources */,
+				A063BE6F163B99F900378BAC /* objectiuFons.png in Resources */,
+				A063BE70163B99F900378BAC /* objectiuFons@2x.png in Resources */,
+				A063BE85163BA37D00378BAC /* navbar.png in Resources */,
+				A063BE86163BA37D00378BAC /* navbar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -726,6 +769,9 @@
 				A058FDC8163B5BB800037FCC /* NSObject+MKBlockAdditions.m in Sources */,
 				A058FDC9163B5BB800037FCC /* UIActionSheet+MKBlockAdditions.m in Sources */,
 				A058FDCA163B5BB800037FCC /* UIAlertView+MKBlockAdditions.m in Sources */,
+				A063BE76163B9B0600378BAC /* CERoundProgressLayer.m in Sources */,
+				A063BE77163B9B0600378BAC /* CERoundProgressView.m in Sources */,
+				A063BE7B163B9DA300378BAC /* LFObjectiusViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
