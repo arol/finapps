@@ -9,6 +9,8 @@
 #import "Operacio+Functions.h"
 #import "LFApiFinappsConnector.h"
 
+#import "LFAccountController.h"
+
 @implementation Operacio (Functions)
 
 + (void) findAllOperacionsInAccount:(NSString *)accountId With:(OperationSuccessListBlock)okResponse errorResponse:(OperationErrorBlock)errorResponse
@@ -26,6 +28,9 @@
                     [operacions addObject:operacio];
                 }
                 [[NSManagedObjectContext defaultContext] save];
+                
+                [[LFAccountController sharedAccountController] evaluateOperations:operacions];
+                
                 if (okResponse){
                     NSArray *ops = [NSArray arrayWithArray:operacions];
                     okResponse(ops);

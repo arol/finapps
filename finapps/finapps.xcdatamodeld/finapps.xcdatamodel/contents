@@ -2,7 +2,7 @@
 <model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Categoria" representedClassName="Categoria" syncable="YES">
         <attribute name="ident" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="isRecursive" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="isRecursive" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
         <attribute name="nom" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="productes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Operacio" inverseName="categoria" inverseEntity="Operacio" syncable="YES"/>
         <relationship name="repte" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Repte" inverseName="categoria" inverseEntity="Repte" syncable="YES"/>
@@ -34,7 +34,7 @@
         <attribute name="descript" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="ident" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="options" optional="YES" attributeType="String" syncable="YES"/>
-        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="value" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <relationship name="categoria" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Categoria" inverseName="productes" inverseEntity="Categoria" syncable="YES"/>
         <relationship name="compte" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="CompteCorrent" inverseName="operacions" inverseEntity="CompteCorrent" syncable="YES"/>
