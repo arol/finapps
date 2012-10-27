@@ -6,17 +6,17 @@
 //  Copyright (c) 2012 Lafosca. All rights reserved.
 //
 
-#import "LFFirstViewController.h"
+#import "LFExtracteViewController.h"
 #import "LFSelectorCategoriaViewController.h"
 #import "CompteCorrent+Functions.h"
 #import "Operacio+Functions.h"
 #import "Categoria.h"
 
-@interface LFFirstViewController ()
+@interface LFExtracteViewController ()
     @property (nonatomic, strong) NSArray *operacions;
 @end
 
-@implementation LFFirstViewController
+@implementation LFExtracteViewController
 
 - (void)viewDidLoad
 {
@@ -109,6 +109,7 @@
     NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
     Operacio *operacio = [self.operacions objectAtIndex:selectedIndexPath.row];
     [selectorCategoria setOperacio:operacio];
+    [selectorCategoria setOperacions:self.operacions];
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {

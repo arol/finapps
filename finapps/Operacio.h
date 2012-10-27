@@ -2,7 +2,7 @@
 //  Operacio.h
 //  finapps
 //
-//  Created by David Cortés Fulla on 26/10/12.
+//  Created by Arol Viñolas on 27/10/12.
 //  Copyright (c) 2012 Lafosca. All rights reserved.
 //
 
@@ -19,7 +19,7 @@
 @property (nonatomic, retain) NSString * descript;
 @property (nonatomic, retain) NSString * ident;
 @property (nonatomic, retain) NSString * options;
-@property (nonatomic, retain) NSNumber * type;
+@property (nonatomic, retain) NSString * type;
 @property (nonatomic, retain) NSNumber * value;
 @property (nonatomic, retain) Categoria *categoria;
 @property (nonatomic, retain) CompteCorrent *compte;

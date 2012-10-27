@@ -12,9 +12,12 @@
 @interface LFSelectorCategoriaViewController : UIViewController <UITextFieldDelegate,UITableViewDataSource,UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
+@property (nonatomic, strong) NSArray *operacions;
 @property (nonatomic, strong) Operacio *operacio;
+@property (weak, nonatomic) IBOutlet UIButton *recursiveButton;
 
 - (IBAction)closeModal:(id)sender;
 - (IBAction)afegirCategoria:(id)sender;
+- (void)toggleRecursive:(id)sender;
 
 @end

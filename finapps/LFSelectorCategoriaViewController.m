@@ -10,9 +10,11 @@
 #import "Categoria.h"
 #import "UIAlertView+MKBlockAdditions.h"
 
+#import "LFAccountController.h"
+
 @interface LFSelectorCategoriaViewController ()
     @property (nonatomic, assign) BOOL isAdding;
-    @property (nonatomic, strong) NSArray *categories;
+    @property (nonatomic, strong) NSMutableArray *categories;
 @end
 
 @implementation LFSelectorCategoriaViewController
@@ -30,7 +32,7 @@
 {
     [super viewDidLoad];
 
-    self.categories = [Categoria findAllSortedBy:@"nom" ascending:YES];
+    self.categories = [NSMutableArray arrayWithArray:[Categoria findAllSortedBy:@"nom" ascending:YES]];
     [self.tableview reloadData];
 }
 
@@ -84,6 +86,17 @@
         
         UILabel *nom = (UILabel *)[cell viewWithTag:1];
         nom.text = [categoria.nom uppercaseString];
+        
+        UIButton *recursiveButton = (UIButton*)[cell viewWithTag:2];
+        [recursiveButton addTarget:self
+                            action:@selector(toggleRecursive:)
+                  forControlEvents:UIControlEventTouchUpInside];
+        
+        if ([[categoria isRecursive] boolValue]) {
+            [recursiveButton setSelected:YES];
+        }else{
+            [recursiveButton setSelected:NO];
+        }
     }
     
     
@@ -95,12 +108,16 @@
     [self.operacio setCategoria:[self.categories objectAtIndex:indexPath.row]];
     NSArray *operacions = [Operacio findByAttribute:@"concept" withValue:self.operacio.concept];
     if (operacions.count>1){
-        [UIAlertView alertViewWithTitle:@"Assignar categoria" message:[NSString stringWithFormat:@"Vols assignar aquesta categoria a tot el que tingui el concepte %@ (%i operacions) i en futures operacions?",self.operacio.concept, operacions.count - 1] cancelButtonTitle:@"No" otherButtonTitles:[NSArray arrayWithObject:@"Si"] onDismiss:^(int buttonIndex) {
+        [UIAlertView alertViewWithTitle:@"Assignar categoria"
+                                message:[NSString stringWithFormat:@"Vols assignar aquesta categoria a tot el que tingui el concepte %@ (%i operacions) i en futures operacions?",self.operacio.concept, operacions.count - 1] cancelButtonTitle:@"No" otherButtonTitles:[NSArray arrayWithObject:@"Si"] onDismiss:^(int buttonIndex) {
 
             for (Operacio *operacio in operacions) {
                 [operacio setCategoria:[self.categories objectAtIndex:indexPath.row]];
             }
             [self closeModal:nil];
+            
+            [[LFAccountController sharedAccountController] evaluateOperations:self.operacions];
+                                    
         } onCancel:^{
             NSLog(@"no");
             [self closeModal:nil];
@@ -132,8 +149,32 @@
         categoria.nom = nomCategoria;
         [[NSManagedObjectContext defaultContext] save];
         self.isAdding = NO;
-        self.categories = [Categoria findAllSortedBy:@"nom" ascending:YES];
+        self.categories = (NSArray*)[Categoria findAllSortedBy:@"nom" ascending:YES];
         [self.tableview reloadData];
     }
 }
+
+-(void)toggleRecursive:(id)sender{
+    UIButton *button = (UIButton*)sender;
+    
+    UITableViewCell *cell = (UITableViewCell*)[[sender superview] superview];
+
+
+    Categoria *categoria = [self.categories objectAtIndex:[self.tableview indexPathForCell:cell].row];
+    
+    if ([button isSelected]) {
+        [button setSelected:NO];
+        
+        [categoria setIsRecursive:[NSNumber numberWithBool:NO]];
+    }else{
+        [button setSelected:YES];
+        
+        [categoria setIsRecursive:[NSNumber numberWithBool:YES]];
+    }
+    
+        [[NSManagedObjectContext defaultContext] save];
+    
+    [self.tableview reloadData];
+}
+
 @end
