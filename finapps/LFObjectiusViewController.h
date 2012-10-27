@@ -10,6 +10,14 @@
 #import "CERoundProgressView.h"
 
 @interface LFObjectiusViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
-    @property (nonatomic,weak) IBOutlet CERoundProgressView *progressView;
+@property (weak, nonatomic) IBOutlet UILabel *total;
+@property (weak, nonatomic) IBOutlet UILabel *restant;
+@property (weak, nonatomic) IBOutlet UIButton *botoNouObjectiu;
+@property (weak, nonatomic) IBOutlet UIButton *botoDetallObjectiu;
+@property (nonatomic,weak) IBOutlet CERoundProgressView *progressView;
+@property (weak, nonatomic) IBOutlet UILabel *labelAcumulat;
+@property (weak, nonatomic) IBOutlet UILabel *labelRestant;
+
 @end
