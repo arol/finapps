@@ -84,7 +84,11 @@
     
     UIImageView *recurrent = (UIImageView *)[cell viewWithTag:4];
     
-    [recurrent setHidden:YES];
+    if([[[operacio categoria] isRecursive] boolValue]){
+        [recurrent setHidden:NO];
+    }else{
+        [recurrent setHidden:YES];
+    }
     
     UILabel *tag = (UILabel *)[cell viewWithTag:3];
     if (operacio.categoria) tag.text = [operacio.categoria.nom uppercaseString];

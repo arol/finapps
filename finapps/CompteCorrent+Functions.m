@@ -27,6 +27,7 @@
                         [comptesCorrents addObject:compteCorrent];
                         if (okResponse && [[JSON valueForKey:@"data"]count] ==  [comptesCorrents count]){
                             NSArray *ccs = [NSArray arrayWithArray:comptesCorrents];
+                            [[NSManagedObjectContext defaultContext] save];
                             okResponse(ccs);
                         }
                         
@@ -96,11 +97,32 @@
                 }else{
                     [self setIsEstalvi:[NSNumber numberWithBool:NO]];
                 }
+                [[NSManagedObjectContext defaultContext] save];
             }
             failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                 NSLog(@"ERROR retrieving account from parse: %@", error);
             }];
 }
 
+
++ (CompteCorrent*)savingsAccount{
+    NSArray *comptes = [CompteCorrent findAll];
+    for (CompteCorrent* compte in comptes){
+        if([[compte isEstalvi] boolValue]){
+            return compte;
+        }
+    }
+    return nil;
+}
+
++ (CompteCorrent*)regularAccount{
+    NSArray *comptes = [CompteCorrent findAll];
+    for (CompteCorrent* compte in comptes){
+        if(![[compte isEstalvi] boolValue]){
+            return compte;
+        }
+    }
+    return nil;
+}
 
 @end

@@ -8,6 +8,7 @@
 
 #import "LFAccountController.h"
 
+#import "CompteCorrent+Functions.h"
 #import "Operacio+Functions.h"
 #import "Categoria.h"
 
@@ -28,6 +29,11 @@
     NSNumber* ingresosCount = @0;
     NSNumber* despesesCount = @0;
     
+    NSArray *operacionsCoreData = [Operacio findAll];
+    if([operacionsCoreData count] > 0){
+        operations = operacionsCoreData;
+    }
+    
     for(Operacio *operacio in operations){
         Categoria *categoria = [operacio categoria];
         
@@ -43,7 +49,27 @@
     
     [self setIngresos:ingresosCount];
     [self setDespesesFixes:despesesCount];
+}
 
+- (NSNumber*)pressupostMensual{
+    return [NSNumber numberWithFloat:([self.ingresos floatValue] - [self.despesesFixes floatValue])];
+}
+
+- (NSNumber*)pressupostDiari{
+    NSCalendar *cal = [NSCalendar currentCalendar];
+    NSRange rng = [cal rangeOfUnit:NSDayCalendarUnit inUnit:NSMonthCalendarUnit forDate:[NSDate date]];
+    NSUInteger numberOfDaysInMonth = rng.length;
+    
+    return [NSNumber numberWithFloat:([[self pressupostMensual] floatValue]/numberOfDaysInMonth)];
+}
+
+
+-(NSNumber*)despesesDiaries{
+    return @52;
+}
+
+-(NSNumber*)despesesMensuals{
+    return @2000;
 }
 
 @end

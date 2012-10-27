@@ -98,8 +98,7 @@
             [recursiveButton setSelected:NO];
         }
     }
-    
-    
+        
     return cell;
 }
 
@@ -117,14 +116,14 @@
             [self closeModal:nil];
             
             [[LFAccountController sharedAccountController] evaluateOperations:self.operacions];
-                                    
         } onCancel:^{
             NSLog(@"no");
             [self closeModal:nil];
         }];
     }
     else {
-        [self closeModal:nil];        
+        [self closeModal:nil];
+        [[LFAccountController sharedAccountController] evaluateOperations:self.operacions];
     }
 }
 

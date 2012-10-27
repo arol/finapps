@@ -18,5 +18,8 @@ typedef void (^SuccessElem)(CompteCorrent *compteCorrent);
 
 -(void)checkIfIsSavingsAccount;
 
++ (CompteCorrent*)savingsAccount;
+
++ (CompteCorrent*)regularAccount;
 
 @end

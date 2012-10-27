@@ -102,7 +102,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="right" image="balance-positive-bar.png" id="Cvq-mH-MOs">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" image="balance-positive-bar.png" id="Cvq-mH-MOs">
                                 <rect key="frame" x="160" y="293" width="74" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
