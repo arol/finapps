@@ -78,9 +78,24 @@
 		9F6720D1163BD8FF00374E48 /* LFCreateObjectiuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6720CE163BD8A300374E48 /* LFCreateObjectiuViewController.m */; };
 		9F6720D4163BD94A00374E48 /* UILabel+NumberAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6720D3163BD94A00374E48 /* UILabel+NumberAnimation.m */; };
 		9F6720D5163BD95F00374E48 /* UILabel+NumberAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6720D3163BD94A00374E48 /* UILabel+NumberAnimation.m */; };
+		9F6720DA163BDB9F00374E48 /* categoria-recursiva-activa.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6720D6163BDB9F00374E48 /* categoria-recursiva-activa.png */; };
+		9F6720DB163BDB9F00374E48 /* categoria-recursiva-activa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6720D7163BDB9F00374E48 /* categoria-recursiva-activa@2x.png */; };
+		9F6720DC163BDB9F00374E48 /* categoria-recursiva-desactivada.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6720D8163BDB9F00374E48 /* categoria-recursiva-desactivada.png */; };
+		9F6720DD163BDB9F00374E48 /* categoria-recursiva-desactivada@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6720D9163BDB9F00374E48 /* categoria-recursiva-desactivada@2x.png */; };
+		9F6720E0163BDD5A00374E48 /* LFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6720DF163BDD5A00374E48 /* LFLoginViewController.m */; };
+		9F6720E3163BE10B00374E48 /* fixed-nav-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6720E1163BE10B00374E48 /* fixed-nav-bar.png */; };
+		9F6720E4163BE10B00374E48 /* fixed-nav-bar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F6720E2163BE10B00374E48 /* fixed-nav-bar@2x.png */; };
 		A00846F6163BDD4D00ACA692 /* estalviBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A00846F4163BDD4D00ACA692 /* estalviBackground.png */; };
 		A00846F7163BDD4D00ACA692 /* estalvi@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A00846F5163BDD4D00ACA692 /* estalvi@2x.png */; };
 		A00846FA163BDD6C00ACA692 /* estalviBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A00846F9163BDD6C00ACA692 /* estalviBackground@2x.png */; };
+		A0084701163BE68200ACA692 /* ajuda.png in Resources */ = {isa = PBXBuildFile; fileRef = A00846FF163BE68200ACA692 /* ajuda.png */; };
+		A0084702163BE68200ACA692 /* ajuda@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0084700163BE68200ACA692 /* ajuda@2x.png */; };
+		A0084706163BE9BA00ACA692 /* retos.png in Resources */ = {isa = PBXBuildFile; fileRef = A0084704163BE9BA00ACA692 /* retos.png */; };
+		A0084707163BE9BA00ACA692 /* retos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0084705163BE9BA00ACA692 /* retos@2x.png */; };
+		A008470A163BEA1D00ACA692 /* reptes.png in Resources */ = {isa = PBXBuildFile; fileRef = A0084708163BEA1D00ACA692 /* reptes.png */; };
+		A008470B163BEA1D00ACA692 /* reptes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A0084709163BEA1D00ACA692 /* reptes@2x.png */; };
+		A008470E163BECAE00ACA692 /* LFReptesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A008470D163BECAE00ACA692 /* LFReptesViewController.m */; };
+		A0084710163BF18900ACA692 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A008470F163BF18900ACA692 /* logo.png */; };
 		A058FDAD163B35D900037FCC /* Operacio+Functions.m in Sources */ = {isa = PBXBuildFile; fileRef = A058FDAC163B35D900037FCC /* Operacio+Functions.m */; };
 		A058FDB1163B4E6D00037FCC /* recurrent.png in Resources */ = {isa = PBXBuildFile; fileRef = A058FDAF163B4E6D00037FCC /* recurrent.png */; };
 		A058FDB2163B4E6D00037FCC /* recurrent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A058FDB0163B4E6D00037FCC /* recurrent@2x.png */; };
@@ -240,9 +255,26 @@
 		9F6720CE163BD8A300374E48 /* LFCreateObjectiuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFCreateObjectiuViewController.m; sourceTree = "<group>"; };
 		9F6720D2163BD94A00374E48 /* UILabel+NumberAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+NumberAnimation.h"; sourceTree = "<group>"; };
 		9F6720D3163BD94A00374E48 /* UILabel+NumberAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+NumberAnimation.m"; sourceTree = "<group>"; };
+		9F6720D6163BDB9F00374E48 /* categoria-recursiva-activa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "categoria-recursiva-activa.png"; sourceTree = "<group>"; };
+		9F6720D7163BDB9F00374E48 /* categoria-recursiva-activa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "categoria-recursiva-activa@2x.png"; sourceTree = "<group>"; };
+		9F6720D8163BDB9F00374E48 /* categoria-recursiva-desactivada.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "categoria-recursiva-desactivada.png"; sourceTree = "<group>"; };
+		9F6720D9163BDB9F00374E48 /* categoria-recursiva-desactivada@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "categoria-recursiva-desactivada@2x.png"; sourceTree = "<group>"; };
+		9F6720DE163BDD5A00374E48 /* LFLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLoginViewController.h; sourceTree = "<group>"; };
+		9F6720DF163BDD5A00374E48 /* LFLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLoginViewController.m; sourceTree = "<group>"; };
+		9F6720E1163BE10B00374E48 /* fixed-nav-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fixed-nav-bar.png"; sourceTree = "<group>"; };
+		9F6720E2163BE10B00374E48 /* fixed-nav-bar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fixed-nav-bar@2x.png"; sourceTree = "<group>"; };
 		A00846F4163BDD4D00ACA692 /* estalviBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = estalviBackground.png; sourceTree = "<group>"; };
 		A00846F5163BDD4D00ACA692 /* estalvi@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "estalvi@2x.png"; sourceTree = "<group>"; };
 		A00846F9163BDD6C00ACA692 /* estalviBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "estalviBackground@2x.png"; sourceTree = "<group>"; };
+		A00846FF163BE68200ACA692 /* ajuda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ajuda.png; path = imatges/ajuda.png; sourceTree = "<group>"; };
+		A0084700163BE68200ACA692 /* ajuda@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ajuda@2x.png"; path = "imatges/ajuda@2x.png"; sourceTree = "<group>"; };
+		A0084704163BE9BA00ACA692 /* retos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = retos.png; path = imatges/retos.png; sourceTree = "<group>"; };
+		A0084705163BE9BA00ACA692 /* retos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "retos@2x.png"; path = "imatges/retos@2x.png"; sourceTree = "<group>"; };
+		A0084708163BEA1D00ACA692 /* reptes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = reptes.png; path = imatges/reptes.png; sourceTree = "<group>"; };
+		A0084709163BEA1D00ACA692 /* reptes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "reptes@2x.png"; path = "imatges/reptes@2x.png"; sourceTree = "<group>"; };
+		A008470C163BECAE00ACA692 /* LFReptesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFReptesViewController.h; sourceTree = "<group>"; };
+		A008470D163BECAE00ACA692 /* LFReptesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFReptesViewController.m; sourceTree = "<group>"; };
+		A008470F163BF18900ACA692 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		A058FDAB163B35D900037FCC /* Operacio+Functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Operacio+Functions.h"; sourceTree = "<group>"; };
 		A058FDAC163B35D900037FCC /* Operacio+Functions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Operacio+Functions.m"; sourceTree = "<group>"; };
 		A058FDAF163B4E6D00037FCC /* recurrent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = recurrent.png; path = imatges/recurrent.png; sourceTree = "<group>"; };
@@ -434,6 +466,8 @@
 				9F671F88163AF7E800374E48 /* LFAppDelegate.h */,
 				9F671F89163AF7E800374E48 /* LFAppDelegate.m */,
 				9F671F91163AF7E800374E48 /* MainStoryboard.storyboard */,
+				A008470C163BECAE00ACA692 /* LFReptesViewController.h */,
+				A008470D163BECAE00ACA692 /* LFReptesViewController.m */,
 				A058FDBC163B538300037FCC /* LFSelectorCategoriaViewController.h */,
 				A058FDBD163B538300037FCC /* LFSelectorCategoriaViewController.m */,
 				A063BE79163B9DA300378BAC /* LFObjectiusViewController.h */,
@@ -529,6 +563,13 @@
 		9F671FFB163B519D00374E48 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A008470F163BF18900ACA692 /* logo.png */,
+				A0084708163BEA1D00ACA692 /* reptes.png */,
+				A0084709163BEA1D00ACA692 /* reptes@2x.png */,
+				A0084704163BE9BA00ACA692 /* retos.png */,
+				A0084705163BE9BA00ACA692 /* retos@2x.png */,
+				A00846FF163BE68200ACA692 /* ajuda.png */,
+				A0084700163BE68200ACA692 /* ajuda@2x.png */,
 				9F6720D6163BDB9F00374E48 /* categoria-recursiva-activa.png */,
 				9F6720D7163BDB9F00374E48 /* categoria-recursiva-activa@2x.png */,
 				9F6720D8163BDB9F00374E48 /* categoria-recursiva-desactivada.png */,
@@ -892,9 +933,22 @@
 				9F6720C7163BD80400374E48 /* recordar@2x.png in Resources */,
 				9F6720C8163BD80400374E48 /* recurrent.png in Resources */,
 				9F6720C9163BD80400374E48 /* recurrent@2x.png in Resources */,
+				9F6720DA163BDB9F00374E48 /* categoria-recursiva-activa.png in Resources */,
+				9F6720DB163BDB9F00374E48 /* categoria-recursiva-activa@2x.png in Resources */,
+				9F6720DC163BDB9F00374E48 /* categoria-recursiva-desactivada.png in Resources */,
+				9F6720DD163BDB9F00374E48 /* categoria-recursiva-desactivada@2x.png in Resources */,
+				9F6720E3163BE10B00374E48 /* fixed-nav-bar.png in Resources */,
+				9F6720E4163BE10B00374E48 /* fixed-nav-bar@2x.png in Resources */,
 				A00846F6163BDD4D00ACA692 /* estalviBackground.png in Resources */,
 				A00846F7163BDD4D00ACA692 /* estalvi@2x.png in Resources */,
 				A00846FA163BDD6C00ACA692 /* estalviBackground@2x.png in Resources */,
+				A0084701163BE68200ACA692 /* ajuda.png in Resources */,
+				A0084702163BE68200ACA692 /* ajuda@2x.png in Resources */,
+				A0084706163BE9BA00ACA692 /* retos.png in Resources */,
+				A0084707163BE9BA00ACA692 /* retos@2x.png in Resources */,
+				A008470A163BEA1D00ACA692 /* reptes.png in Resources */,
+				A008470B163BEA1D00ACA692 /* reptes@2x.png in Resources */,
+				A0084710163BF18900ACA692 /* logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -994,6 +1048,7 @@
 				A063BE77163B9B0600378BAC /* CERoundProgressView.m in Sources */,
 				A063BE7B163B9DA300378BAC /* LFObjectiusViewController.m in Sources */,
 				9F6720E0163BDD5A00374E48 /* LFLoginViewController.m in Sources */,
+				A008470E163BECAE00ACA692 /* LFReptesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

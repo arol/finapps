@@ -107,4 +107,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)obrirExtracte:(id)sender {
+    UITabBarController *tabbarcontroller = (UITabBarController *) SharedAppDelegate.window.rootViewController;
+    NSLog(@"%@",tabbarcontroller);
+    
+    [tabbarcontroller setSelectedIndex:3];
+}
 @end

@@ -1,19 +1,18 @@
 //
-//  LFEstalviViewController.m
+//  LFReptesViewController.m
 //  finapps
 //
 //  Created by David Cortés Fulla on 27/10/12.
 //  Copyright (c) 2012 Lafosca. All rights reserved.
 //
 
-#import "LFEstalviViewController.h"
-#import "UILabel+NumberAnimation.h"
+#import "LFReptesViewController.h"
 
-@interface LFEstalviViewController ()
+@interface LFReptesViewController ()
 
 @end
 
-@implementation LFEstalviViewController
+@implementation LFReptesViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -24,11 +23,10 @@
     return self;
 }
 
-- (void)viewDidAppear:(BOOL)animated
+- (void)viewDidLoad
 {
-    [super viewDidAppear:animated];
-    [self.scrollview setContentSize:CGSizeMake(320, 659)];
-    [self.label animateTextFromZeroTo:15000 andFormat:@"%i €" duration:0.5];
+    [super viewDidLoad];
+	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

@@ -79,8 +79,9 @@
     }
     [self.segmentedControl setSegmentedControlStyle:UISegmentedControlStyleBar];
     self.segmentedControl.tintColor = [UIColor colorWithWhite:0.4 alpha:1.0];
-    [self.segmentedControl setFrame:CGRectMake(18, 6, 290, 30)];
-    [self.segmentedControl setSegmentedControlStyle:UISegmentedControlStyleBezeled];    
+    [self.segmentedControl setFrame:CGRectMake(34, 6, 290, 30)];
+    [self.segmentedControl setSegmentedControlStyle:UISegmentedControlStyleBezeled];
+    
 }
 - (void) omplirAconseguit:(NSNumber *)valor
 {
@@ -107,4 +108,23 @@
     return (float)(duration / TIME_OF_TRANSITION);
 }
 
+- (IBAction)valueChanged:(UISegmentedControl *)sender {
+    NSLog(@"%i",[sender selectedSegmentIndex]);
+    switch ([sender selectedSegmentIndex]) {
+        case 0:
+            NSLog(@"Objectius");
+            [[self.reptesController view] removeFromSuperview];
+            break;
+        case 1:
+            NSLog(@"Reptes");
+            self.objectiusView = self.view;
+            self.reptesController = [self.storyboard instantiateViewControllerWithIdentifier:@"reptes"];
+            [self.reptesController.view setFrame:CGRectMake(self.reptesController.view.frame.origin.x, self.reptesController.view.frame.origin.y + 20, self.reptesController.view.frame.size.width, self.reptesController.view.frame.size.height)];
+            [self.view addSubview:[self.reptesController view]];
+            break;
+            
+        default:
+            break;
+    }
+}
 @end

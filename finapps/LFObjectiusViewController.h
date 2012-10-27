@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CERoundProgressView.h"
+#import "LFReptesViewController.h"
 
 @interface LFObjectiusViewController : UIViewController
 
@@ -19,5 +20,10 @@
 @property (nonatomic,weak) IBOutlet CERoundProgressView *progressView;
 @property (weak, nonatomic) IBOutlet UILabel *labelAcumulat;
 @property (weak, nonatomic) IBOutlet UILabel *labelRestant;
+
+@property (strong,nonatomic) UIView *objectiusView;
+@property (strong,nonatomic) LFReptesViewController *reptesController;
+
+- (IBAction)valueChanged:(UISegmentedControl *)sender;
 
 @end

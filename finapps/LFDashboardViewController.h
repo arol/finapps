@@ -19,5 +19,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *objectiuButton;
 @property (weak, nonatomic) IBOutlet UIButton *estalviButton;
+
+- (IBAction)obrirExtracte:(id)sender;
  
 @end
