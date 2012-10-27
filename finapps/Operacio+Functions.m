@@ -25,7 +25,7 @@
                     Operacio *operacio = [Operacio createObjectWithParameters:operacioDictionary];
                     [operacions addObject:operacio];
                 }
-                
+                [[NSManagedObjectContext defaultContext] save];
                 if (okResponse){
                     NSArray *ops = [NSArray arrayWithArray:operacions];
                     okResponse(ops);
@@ -42,9 +42,13 @@
 
 + (Operacio *)createObjectWithParameters:(NSDictionary *)JSON
 {
-    Operacio *op = [Operacio createEntity];
-    op.concept = [JSON valueForKeyPath:@"concept"];
-    op.value = [JSON valueForKeyPath:@"value"];
+    Operacio *op = [Operacio findFirstByAttribute:@"ident" withValue:[JSON valueForKey:@"id"]];
+    if (!op){
+        op = [Operacio createEntity];
+        op.ident = [JSON valueForKey:@"id"];
+        op.concept = [JSON valueForKeyPath:@"concept"];
+        op.value = [JSON valueForKeyPath:@"value"];
+    }
     return op;
 }
 

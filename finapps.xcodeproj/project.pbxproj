@@ -34,6 +34,12 @@
 		A058FDB2163B4E6D00037FCC /* recurrent@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A058FDB0163B4E6D00037FCC /* recurrent@2x.png */; };
 		A058FDB6163B4EEF00037FCC /* backgroundTableView.png in Resources */ = {isa = PBXBuildFile; fileRef = A058FDB4163B4EEF00037FCC /* backgroundTableView.png */; };
 		A058FDB7163B4EEF00037FCC /* backgroundTableView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A058FDB5163B4EEF00037FCC /* backgroundTableView@2x.png */; };
+		A058FDBE163B538300037FCC /* LFSelectorCategoriaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A058FDBD163B538300037FCC /* LFSelectorCategoriaViewController.m */; };
+		A058FDC8163B5BB800037FCC /* NSObject+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A058FDC3163B5BB800037FCC /* NSObject+MKBlockAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A058FDC9163B5BB800037FCC /* UIActionSheet+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A058FDC5163B5BB800037FCC /* UIActionSheet+MKBlockAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A058FDCA163B5BB800037FCC /* UIAlertView+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A058FDC7163B5BB800037FCC /* UIAlertView+MKBlockAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A058FDCD163B68AF00037FCC /* recordar.png in Resources */ = {isa = PBXBuildFile; fileRef = A058FDCB163B68AF00037FCC /* recordar.png */; };
+		A058FDCE163B68AF00037FCC /* recordar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A058FDCC163B68AF00037FCC /* recordar@2x.png */; };
 		A0836565163B16BF00E78308 /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = A083654F163B16BF00E78308 /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A0836566163B16BF00E78308 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A0836551163B16BF00E78308 /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A0836567163B16BF00E78308 /* AFImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A0836553163B16BF00E78308 /* AFImageCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -129,6 +135,17 @@
 		A058FDB0163B4E6D00037FCC /* recurrent@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "recurrent@2x.png"; path = "imatges/recurrent@2x.png"; sourceTree = "<group>"; };
 		A058FDB4163B4EEF00037FCC /* backgroundTableView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = backgroundTableView.png; path = imatges/backgroundTableView.png; sourceTree = "<group>"; };
 		A058FDB5163B4EEF00037FCC /* backgroundTableView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "backgroundTableView@2x.png"; path = "imatges/backgroundTableView@2x.png"; sourceTree = "<group>"; };
+		A058FDBC163B538300037FCC /* LFSelectorCategoriaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFSelectorCategoriaViewController.h; sourceTree = "<group>"; };
+		A058FDBD163B538300037FCC /* LFSelectorCategoriaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSelectorCategoriaViewController.m; sourceTree = "<group>"; };
+		A058FDC1163B5BB800037FCC /* MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBlockAdditions.h; sourceTree = "<group>"; };
+		A058FDC2163B5BB800037FCC /* NSObject+MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MKBlockAdditions.h"; sourceTree = "<group>"; };
+		A058FDC3163B5BB800037FCC /* NSObject+MKBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MKBlockAdditions.m"; sourceTree = "<group>"; };
+		A058FDC4163B5BB800037FCC /* UIActionSheet+MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+MKBlockAdditions.h"; sourceTree = "<group>"; };
+		A058FDC5163B5BB800037FCC /* UIActionSheet+MKBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+MKBlockAdditions.m"; sourceTree = "<group>"; };
+		A058FDC6163B5BB800037FCC /* UIAlertView+MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKBlockAdditions.h"; sourceTree = "<group>"; };
+		A058FDC7163B5BB800037FCC /* UIAlertView+MKBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKBlockAdditions.m"; sourceTree = "<group>"; };
+		A058FDCB163B68AF00037FCC /* recordar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = recordar.png; path = imatges/recordar.png; sourceTree = "<group>"; };
+		A058FDCC163B68AF00037FCC /* recordar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "recordar@2x.png"; path = "imatges/recordar@2x.png"; sourceTree = "<group>"; };
 		A083654E163B16BF00E78308 /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
 		A083654F163B16BF00E78308 /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
 		A0836550163B16BF00E78308 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
@@ -271,6 +288,7 @@
 		9F671F78163AF7E700374E48 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A058FDC0163B5BB800037FCC /* BlockAdditions */,
 				A0836762163B1CD300E78308 /* MagicalRecord */,
 				A083654D163B16BF00E78308 /* AFNetworking */,
 				9F671FE0163B0EF000374E48 /* CoreData.framework */,
@@ -290,6 +308,8 @@
 				9F671F88163AF7E800374E48 /* LFAppDelegate.h */,
 				9F671F89163AF7E800374E48 /* LFAppDelegate.m */,
 				9F671F91163AF7E800374E48 /* MainStoryboard.storyboard */,
+				A058FDBC163B538300037FCC /* LFSelectorCategoriaViewController.h */,
+				A058FDBD163B538300037FCC /* LFSelectorCategoriaViewController.m */,
 				9F671F94163AF7E800374E48 /* LFFirstViewController.h */,
 				9F671F95163AF7E800374E48 /* LFFirstViewController.m */,
 				9F671F97163AF7E800374E48 /* first.png */,
@@ -363,12 +383,29 @@
 		A058FDB3163B4E7200037FCC /* Imatges */ = {
 			isa = PBXGroup;
 			children = (
+				A058FDCB163B68AF00037FCC /* recordar.png */,
+				A058FDCC163B68AF00037FCC /* recordar@2x.png */,
 				A058FDB4163B4EEF00037FCC /* backgroundTableView.png */,
 				A058FDB5163B4EEF00037FCC /* backgroundTableView@2x.png */,
 				A058FDAF163B4E6D00037FCC /* recurrent.png */,
 				A058FDB0163B4E6D00037FCC /* recurrent@2x.png */,
 			);
 			name = Imatges;
+			sourceTree = "<group>";
+		};
+		A058FDC0163B5BB800037FCC /* BlockAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				A058FDC1163B5BB800037FCC /* MKBlockAdditions.h */,
+				A058FDC2163B5BB800037FCC /* NSObject+MKBlockAdditions.h */,
+				A058FDC3163B5BB800037FCC /* NSObject+MKBlockAdditions.m */,
+				A058FDC4163B5BB800037FCC /* UIActionSheet+MKBlockAdditions.h */,
+				A058FDC5163B5BB800037FCC /* UIActionSheet+MKBlockAdditions.m */,
+				A058FDC6163B5BB800037FCC /* UIAlertView+MKBlockAdditions.h */,
+				A058FDC7163B5BB800037FCC /* UIAlertView+MKBlockAdditions.m */,
+			);
+			name = BlockAdditions;
+			path = finapps/BlockAdditions;
 			sourceTree = "<group>";
 		};
 		A083653E163B166400E78308 /* API connector */ = {
@@ -597,6 +634,8 @@
 				A058FDB2163B4E6D00037FCC /* recurrent@2x.png in Resources */,
 				A058FDB6163B4EEF00037FCC /* backgroundTableView.png in Resources */,
 				A058FDB7163B4EEF00037FCC /* backgroundTableView@2x.png in Resources */,
+				A058FDCD163B68AF00037FCC /* recordar.png in Resources */,
+				A058FDCE163B68AF00037FCC /* recordar@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,6 +722,10 @@
 				9F671FF2163B359800374E48 /* LFParseConnector.m in Sources */,
 				9F671FF6163B4AD400374E48 /* Categoria.m in Sources */,
 				A058FDAD163B35D900037FCC /* Operacio+Functions.m in Sources */,
+				A058FDBE163B538300037FCC /* LFSelectorCategoriaViewController.m in Sources */,
+				A058FDC8163B5BB800037FCC /* NSObject+MKBlockAdditions.m in Sources */,
+				A058FDC9163B5BB800037FCC /* UIActionSheet+MKBlockAdditions.m in Sources */,
+				A058FDCA163B5BB800037FCC /* UIAlertView+MKBlockAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

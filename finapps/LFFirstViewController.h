@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LFFirstViewController : UIViewController 
+@interface LFFirstViewController : UIViewController  <UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UILabel *proporcioMensual;
 @property (weak, nonatomic) IBOutlet UILabel *dinersCompte;
