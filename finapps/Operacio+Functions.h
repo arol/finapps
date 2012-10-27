@@ -8,6 +8,13 @@
 
 #import "Operacio.h"
 
+// enum [“DEPOSIT”|”CHARGE”|”PAYROLL”|”TRANSFER”]
+#define OperacioTypeDeposit     @"DEPOSIT"
+#define OperacioTypeCharge      @"CHARGE"
+#define OperacioTypePayroll     @"PAYROLL"
+#define OperacioTypeTransfer    @"TRANSFER"
+
+
 typedef void (^OperationErrorBlock)(NSError* error);
 typedef void (^OperationSuccessListBlock)(NSArray *operacions);
 typedef void (^OperationSuccessElem)(Operacio *operacio);
