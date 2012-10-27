@@ -4,16 +4,125 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Inici-->
+        <!--Dashboard View Controller - Inici-->
         <scene sceneID="aPf-Dx-w6s">
             <objects>
-                <viewController id="jpO-c9-8vj" sceneMemberID="viewController">
+                <viewController id="jpO-c9-8vj" customClass="LFDashboardViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qrq-Lt-JC2">
                         <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background-dashboard.png" id="CxI-uV-7sA">
+                                <rect key="frame" x="0.0" y="75" width="320" height="424"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="8Oj-6Q-AWa">
+                                <rect key="frame" x="0.0" y="42" width="320" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="elF-dg-ecr">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" red="0.83137254901960778" green="0.83137254901960778" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <inset key="contentEdgeInsets" minX="43" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="42 càrrecs pendents de catalogar" backgroundImage="pending-categories-label.png">
+                                            <color key="titleColor" red="0.83137254901960778" green="0.83137254901960778" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="fixed-nav-bar.png" id="0ov-Pk-8yb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="27€" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EFF-3h-ndA">
+                                <rect key="frame" x="20" y="101" width="280" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="65"/>
+                                <color key="textColor" red="0.20506386861313869" green="0.20532048357664234" blue="0.2036667427007299" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Estalviats avui" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Sy3-Wp-1QI">
+                                <rect key="frame" x="20" y="190" width="280" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="0.2050638686" green="0.20532048359999999" blue="0.20366674269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Total mensual: 538€" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vKW-pD-Ioj">
+                                <rect key="frame" x="19" y="224" width="280" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.2050638686" green="0.20532048359999999" blue="0.20366674269999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="0.0" height="1"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="separator.png" id="2X2-ae-oHK">
+                                <rect key="frame" x="39" y="180" width="242" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="balance-bar.png" id="rPR-D7-kXY">
+                                <rect key="frame" x="22" y="281" width="277" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" autoresizesSubviews="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="V4C-BR-uTO">
+                                <rect key="frame" x="0.0" y="380" width="320" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="48" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Objectiu: 600€" backgroundImage="boto-objectius.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.19827782846715328" blue="0.20104356751824817" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gv7-2Q-6og">
+                                <rect key="frame" x="-1" y="424" width="320" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="48" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Estalvi acumulat 12.000€" backgroundImage="boto-estalvi.png">
+                                    <color key="titleColor" red="0.0" green="0.69471373175182483" blue="0.17886062956204379" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="right" image="balance-positive-bar.png" id="Cvq-mH-MOs">
+                                <rect key="frame" x="160" y="293" width="74" height="15"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" image="balance-negative-bar.png" id="u0R-7t-eUb">
+                                <rect key="frame" x="44" y="293" width="115" height="14"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Inici" id="IBb-if-3cX"/>
+                    <tabBarItem key="tabBarItem" title="Inici" image="tab-inici.png" id="IBb-if-3cX"/>
+                    <connections>
+                        <outlet property="carrecsRestantsButton" destination="elF-dg-ecr" id="g1q-hH-W2q"/>
+                        <outlet property="estalviBarImage" destination="Cvq-mH-MOs" id="4Tj-5a-icc"/>
+                        <outlet property="estalviButton" destination="gv7-2Q-6og" id="9x2-XK-pvK"/>
+                        <outlet property="estalviLabel" destination="EFF-3h-ndA" id="aD0-MA-hvR"/>
+                        <outlet property="estalviMensualLabel" destination="vKW-pD-Ioj" id="9CW-0p-5Ms"/>
+                        <outlet property="objectiuButton" destination="V4C-BR-uTO" id="hzM-9x-2nT"/>
+                        <outlet property="perduaBarImage" destination="u0R-7t-eUb" id="HYw-Gj-EIr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LPt-4L-4wN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -28,7 +137,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Objectius" id="Xu8-aG-rXb"/>
+                    <tabBarItem key="tabBarItem" title="Objectius" image="tab-objectius.png" id="Xu8-aG-rXb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Sx-Pe-Byx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -130,7 +239,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Ajuda" id="pBk-wc-R2W"/>
+                    <tabBarItem key="tabBarItem" title="Ajuda" image="tab-ajuda.png" id="pBk-wc-R2W"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fE2-mF-ZN0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -160,9 +269,33 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background-dashboard.png" width="320" height="412"/>
+        <image name="balance-bar.png" width="277" height="39"/>
+        <image name="balance-negative-bar.png" width="135" height="14"/>
+        <image name="balance-positive-bar.png" width="140" height="15"/>
+        <image name="boto-estalvi.png" width="320" height="46"/>
+        <image name="boto-objectius.png" width="320" height="46"/>
         <image name="first" width="16" height="16"/>
+        <image name="fixed-nav-bar.png" width="320" height="47"/>
+        <image name="pending-categories-label.png" width="320" height="43"/>
+        <image name="separator.png" width="243" height="2"/>
+        <image name="tab-ajuda.png" width="30" height="30"/>
+        <image name="tab-inici.png" width="30" height="30"/>
+        <image name="tab-objectius.png" width="20" height="20"/>
     </resources>
     <classes>
+        <class className="LFDashboardViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LFDashboardViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="carrecsRestantsButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="estalviBarImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="estalviButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="estalviLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="estalviMensualLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="objectiuButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="perduaBarImage" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
         <class className="LFFirstViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LFFirstViewController.h"/>
             <relationships>
