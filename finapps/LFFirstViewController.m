@@ -7,8 +7,10 @@
 //
 
 #import "LFFirstViewController.h"
+#import "LFSelectorCategoriaViewController.h"
 #import "CompteCorrent+Functions.h"
 #import "Operacio+Functions.h"
+#import "Categoria.h"
 
 @interface LFFirstViewController ()
     @property (nonatomic, strong) NSArray *operacions;
@@ -48,6 +50,11 @@
     }];
 }
 
+- (void) viewWillAppear:(BOOL)animated
+{
+    [self.tableView reloadData];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -68,9 +75,20 @@
     
     concept.text = [NSString stringWithFormat:@"%@",operacio.concept];
     if ([operacio.value floatValue] < 0.0){
-        [ammount setTextColor:[UIColor colorWithRed:178/255 green:0 blue:0 alpha:1.0]];
+        [ammount setTextColor:[UIColor colorWithRed:178.0/255.0 green:0 blue:0 alpha:1.0]];
+    }
+    else{
+        [ammount setTextColor:[UIColor colorWithRed:0 green:0 blue:0 alpha:1.0]];
     }
     ammount.text = [NSString stringWithFormat:@"%.2f €",[operacio.value floatValue]];
+    
+    UIImageView *recurrent = (UIImageView *)[cell viewWithTag:4];
+    
+    [recurrent setHidden:YES];
+    
+    UILabel *tag = (UILabel *)[cell viewWithTag:3];
+    if (operacio.categoria) tag.text = [operacio.categoria.nom uppercaseString];
+    else tag.text = @"?";
     
     return cell;
 }
@@ -83,6 +101,18 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.operacions.count;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    LFSelectorCategoriaViewController *selectorCategoria = [segue destinationViewController];
+    NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
+    Operacio *operacio = [self.operacions objectAtIndex:selectedIndexPath.row];
+    [selectorCategoria setOperacio:operacio];
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 
