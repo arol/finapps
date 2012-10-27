@@ -485,6 +485,22 @@
 				A058FDB5163B4EEF00037FCC /* backgroundTableView@2x.png */,
 				A058FDAF163B4E6D00037FCC /* recurrent.png */,
 				A058FDB0163B4E6D00037FCC /* recurrent@2x.png */,
+				9F6720AA163BD80300374E48 /* backgroundTableView.png */,
+				9F6720AB163BD80300374E48 /* backgroundTableView@2x.png */,
+				9F6720AC163BD80300374E48 /* botoNouObjectiu.png */,
+				9F6720AD163BD80300374E48 /* botoNouObjectiu@2x.png */,
+				9F6720AE163BD80300374E48 /* crearObjectiu.png */,
+				9F6720AF163BD80300374E48 /* crearObjectiu@2x.png */,
+				9F6720B0163BD80300374E48 /* navbar.png */,
+				9F6720B1163BD80300374E48 /* navbar@2x.png */,
+				9F6720B2163BD80300374E48 /* objectiuCercle.png */,
+				9F6720B3163BD80400374E48 /* objectiuCercle@2x.png */,
+				9F6720B4163BD80400374E48 /* objectiuFons.png */,
+				9F6720B5163BD80400374E48 /* objectiuFons@2x.png */,
+				9F6720B6163BD80400374E48 /* recordar.png */,
+				9F6720B7163BD80400374E48 /* recordar@2x.png */,
+				9F6720B8163BD80400374E48 /* recurrent.png */,
+				9F6720B9163BD80400374E48 /* recurrent@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -890,6 +906,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F671FB6163AF7E800374E48 /* finappsTests.m in Sources */,
+				9F6720CC163BD89900374E48 /* LFEstalviViewController.m in Sources */,
+				9F6720CF163BD8A300374E48 /* LFCreateObjectiuViewController.m in Sources */,
+				9F6720D4163BD94A00374E48 /* UILabel+NumberAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

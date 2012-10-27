@@ -53,6 +53,7 @@
         op.ident = [JSON valueForKey:@"id"];
         op.concept = [JSON valueForKeyPath:@"concept"];
         op.value = [JSON valueForKeyPath:@"value"];
+        op.type = [JSON valueForKeyPath:@"type"];
     }
     return op;
 }

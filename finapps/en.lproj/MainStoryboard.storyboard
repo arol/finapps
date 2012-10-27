@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
     </dependencies>
@@ -102,7 +102,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="right" image="balance-positive-bar.png" id="Cvq-mH-MOs">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="right" image="balance-positive-bar.png" id="Cvq-mH-MOs">
                                 <rect key="frame" x="160" y="293" width="74" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -220,7 +220,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Objectius" id="Xu8-aG-rXb"/>
+                    <tabBarItem key="tabBarItem" title="Objectius" image="tab-objectius.png" id="Xu8-aG-rXb"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="botoDetallObjectiu" destination="DTo-78-Y2S" id="nnm-O3-8fC"/>
@@ -310,7 +310,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Extracte" image="first" id="7"/>
+                    <tabBarItem key="tabBarItem" title="Extracte" image="tab-extracte.png" id="7"/>
                     <connections>
                         <outlet property="dinersCompte" destination="cpf-lb-CLs" id="U6m-Wd-veD"/>
                         <outlet property="proporcioMensual" destination="KcW-aG-iBe" id="q8C-1q-4xb"/>
@@ -450,7 +450,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Estalvi" id="OEc-Vq-usx"/>
+                    <tabBarItem key="tabBarItem" title="Estalvi" image="tab-estalvi.png" id="OEc-Vq-usx"/>
                     <connections>
                         <outlet property="label" destination="KcW-aG-iBe" id="fbS-bu-4if"/>
                     </connections>
@@ -574,15 +574,17 @@
         <image name="categoria-recursiva-activa.png" width="16" height="16"/>
         <image name="categoria-recursiva-desactivada.png" width="16" height="16"/>
         <image name="crearObjectiu.png" width="320" height="118"/>
-        <image name="first" width="16" height="16"/>
         <image name="fixed-nav-bar.png" width="320" height="47"/>
         <image name="navbar.png" width="320" height="47"/>
         <image name="objectiuFons.png" width="320" height="459"/>
         <image name="pending-categories-label.png" width="320" height="43"/>
         <image name="recurrent.png" width="18" height="15"/>
         <image name="separator.png" width="243" height="2"/>
-        <image name="tab-ajuda.png" width="16" height="16"/>
-        <image name="tab-inici.png" width="16" height="16"/>
+        <image name="tab-ajuda.png" width="30" height="30"/>
+        <image name="tab-estalvi.png" width="30" height="30"/>
+        <image name="tab-extracte.png" width="30" height="30"/>
+        <image name="tab-inici.png" width="30" height="30"/>
+        <image name="tab-objectius.png" width="20" height="20"/>
     </resources>
     <classes>
         <class className="CERoundProgressView" superclassName="UIView">
