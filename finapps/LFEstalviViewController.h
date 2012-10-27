@@ -11,5 +11,6 @@
 @interface LFEstalviViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollview;
 
 @end

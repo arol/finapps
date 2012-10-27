@@ -40,6 +40,7 @@
         if ([[operacio type] isEqualToString:OperacioTypePayroll]) {
             ingresosCount = [NSNumber numberWithFloat:([ingresosCount floatValue] + [[operacio value] floatValue])];
         } else if(categoria) {
+            
             if([categoria isRecursive]){
                 // Les despeses es compten en negatiu
                 despesesCount = [NSNumber numberWithFloat:([despesesCount floatValue] + [[operacio value] floatValue])];

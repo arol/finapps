@@ -27,7 +27,8 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self.label animateTextFromZeroTo:3000 andFormat:@"%i €" duration:0.5];
+    [self.scrollview setContentSize:CGSizeMake(320, 699)];
+    [self.label animateTextFromZeroTo:15000 andFormat:@"%i €" duration:0.5];
 }
 
 - (void)didReceiveMemoryWarning
