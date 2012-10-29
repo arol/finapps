@@ -1,5 +1,7 @@
 #LaCaixa Stlvi
 
+*Edit : [Video mostrat a la presentació](https://dl.dropbox.com/u/5602052/Finapps%20Video%20Grup14.mov)*
+
 ##Motivació
 Creiem que entre els clients de La Caixa i de la banca en general hi ha noves oportunitats donades per l'aparició dels dispositius mòvils. Una que hem detectat és el fet d'aprofitar aquest nous canals per incenvitar l'estalvi.
 
